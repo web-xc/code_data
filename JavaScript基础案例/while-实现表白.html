@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-实现表白</title>
+</head>
+<body>
+    <script>
+        // true: 若不输入喜欢,则无限弹出
+        while (true) {
+            let num = prompt('我喜欢你, 你喜欢我吗?')
+        // 用if分支和比较运算符, 若喜欢, 则break结束
+            if (num === '喜欢') {
+                alert('我也喜欢你')
+                break
+            }
+        }
+    </script>
+</body>
+</html>

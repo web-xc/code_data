@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML表格练习1--基本资料</title>
+    <style>
+    body {
+        background-color: cadetblue;                      /* 页面是由HTML的表格标签编写 */
+        font-weight: 700;
+    }
+    h1 {
+        text-align: center;                                  /* By-小城故事 */
+        color: blueviolet;
+    }
+    table {
+        border-color: rgb(0, 255, 76);
+    }
+    h2 {
+        text-align: center;
+        color: rgb(2, 255, 108);
+    }
+    div {
+        text-align: center;
+    }
+    form {
+        border: solid 2px #50e54b !important;
+    }
+    </style>
+</head>
+<body>
+    <h1>HTML表格练习1--基本资料</h1>
+    <p>(1）按照下图设计自己的简历，页面使用框架分成三个部分，单击左下部的“基本资料”超级链接后如下图；要求基本资料里面填写上自己的姓名等基本资料（50分)</p>
+    <p>(3）按照下图完成网页，要求单击确认按钮弹出警示框显示内容为“学号+姓名”，单击提交按钮超链接到第一题的主页，单击重置按钮清空表单内容（50分)</p>
+    <h2>基本资料</h2>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+        <tr>
+            <td>姓名：张三</td>
+            <td>学号：110</td>
+        </tr>
+        <tr>
+            <td>专业：计算机</td>
+            <td>性别：男</td>
+        </tr>
+        <tr>
+            <td>出生年月日：2000.1.1</td>
+            <td>籍贯：广州</td>
+        </tr>
+        <tr>
+            <td colspan="2">兴趣爱好：乒乓球、敲代码</td>
+        </tr>
+    </table>
+    <!-- 健康信息表单： -->
+    <h2>健康信息：</h2>
+    <div>
+    <form action="../表格标签/表格练习1.html" target="_blank" method="post">
+        用户名：<input type="text"> <br>
+        密码：<input type="password"> <br>
+        性别：男<input type="radio" value="nan" name="sex"> 女<input type="radio" value="nv" name="sex"> <br>
+        兴趣爱好：骑自行车<input type="checkbox"> 打游戏<input type="checkbox"> 打篮球<input type="checkbox"> 踢足球<input type="checkbox"> <br>
+        <input type="button" value="确定" onclick="alert('学号：110 姓名：张三')">
+        <input type="submit" action="练习题1.html">
+        <input type="reset" value="重置"> <br>
+        个人简介：<textarea rows="3" cols="20">个人简介</textarea> <br>
+        身高：<input type="text"> <br>
+        体重：<input type="text"> <br>
+    </form>
+    </div>
+</body>
+</html>

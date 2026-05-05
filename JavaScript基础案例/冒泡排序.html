@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冒泡排序</title>
+</head>
+<body>
+    <script>
+        let num1 = [5, 4, 3, 2, 1]
+        // 1.一共需要的趟数, 5个数据我们要走4趟, 用外层for循环
+        // 所以: 数组的长度减去1 length - 1
+        for (let num2 = 0; num2 < num1.length - 1; num2++) {
+            // 2.每一趟交换次数, 用内层循环 
+            // 所以: 减去数组长度1 但我们从0开始, 就是 length - num2 - 1
+            for (let num3 = 0; num3 < num1.length - num2 - 1; num3++) {
+                // 3.if 做判断 0 大于 1 执行交换变量
+                if (num1[num3] > num1[num3 + 1]) {
+                    // 4.交换变量
+                    let temp = num1[num3]
+                    num1[num3] = num1[num3 + 1]
+                    num1[num3 + 1] = temp
+                }
+            }
+        }
+        document.write(num1)
+    </script>
+</body>
+</html>

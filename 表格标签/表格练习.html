@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格练习</title>
+    <style>
+        body {
+            background-color: rgb(0 190 255 / 26%);
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        table {
+            background-color: pink;
+            margin: 0 auto;
+            width: 750px;
+            height: 500px;
+            /* text-align: center; */
+        }
+        .one {
+            text-align: center;
+        }
+        .two {
+            background-color: rgb(255, 255, 255);
+        }
+        .three {
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>海工商国旅新用户注册</h1>
+<form action="">
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>用户名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" placeholder="请输入您的用户名">必填项&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="two">性别：</td>
+            <td class="two">男 <input type="radio" name="sex"> 女 <input type="radio" name="sex"></td>
+        </tr>
+        <tr>
+            <td>密码：(至少6位的）</td>
+            <td><input type="password" placeholder="至少6位数"></td>
+        </tr>
+        <tr>
+            <td  class="two">我的头像：</td>
+            <td  class="two"><input type="file"></td>
+        </tr>
+        <tr>
+            <td>出生日期：</td>
+            <td>
+                <input type="text" class="three">年
+                <input type="text" class="three">月
+                <input type="text" class="three">日
+            </td>
+        </tr>
+        <tr>
+            <td class="two">密码问题：</td>
+            <td  class="two"><input type="text" placeholder="忘记密码的问题"></td>
+        </tr>
+        <tr>
+            <td>Email：</td>
+            <td><input type="text">
+                <select>
+                    <option value="qq">@qq.com</option>
+                    <option value="163">@163.com</option>
+                    <option value="139">@139.com</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="two">您的职业：</td>
+            <td>
+                <select>
+                    <option value="xuesheng">学生</option>
+                    <option value="laoshi">老师</option>
+                    <option value="yisheng">医生</option>
+                    <option value="gangqinjia">钢琴家</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>兴趣爱好：</td>
+            <td>
+                打篮球<input type="checkbox">
+                吃货<input type="checkbox">
+                旅游<input type="checkbox">
+                玩游戏<input type="checkbox">
+                逛街<input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td class="two">备注信息：</td>
+            <td class="two">
+                <textarea cols="20" rows="4" placeholder="请输入您的备注"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="one"><input type="submit"> <input type="reset"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPPO横幅案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .one {
+            position: relative;
+            width: 750px;
+            height: 300px;
+            /* background-color: pink; */
+            margin: 100px auto;
+        }
+        .one img {
+            width: 750px;
+            height: 300px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 宋体;
+        }
+        .two {
+            width: 22px;
+            height: 58px;
+            background-color: #6060604d;
+            padding-left: 10px;
+            position: absolute;
+            line-height: 58px;
+            top: 50%;
+            left: 0;
+            margin-top: -20px;
+        }
+        .three {
+            width: 22px;
+            height: 58px;
+            background-color: #6060604d;
+            padding-left: 10px;
+            position: absolute;
+            line-height: 58px;
+            top: 50%;
+            right: 0;
+            margin-top: -20px;
+        }
+        .two:hover,
+        .three:hover {
+            background-color: #606060c2;
+        }
+        ul {
+            width: 100px;
+            height: 20px;
+            background-color: #0000004a;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -50px;
+            margin-bottom: 10px;
+            border-radius: 100px;
+        }
+        ul li {
+            float: left;
+            list-style: none;
+            width: 8px;
+            height: 8px;
+            margin: 6px 1px 0 9px;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+        ul li:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <img src="https://dsfs.oppo.com/archives/202204/20220418060428625d3770b615c.jpg?_w_=2624&_h_=960">
+        <a href="./轮播图圆角.html" class="two">&lt;</a>
+        <a href="javascript:;" class="three">&gt;</a>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

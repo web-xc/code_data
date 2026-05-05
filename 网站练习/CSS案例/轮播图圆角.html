@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横幅圆角</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 780px;
+            height: 360px;
+            /* background-color: skyblue; */
+            margin: 100px auto;
+            position: relative;
+        }
+        .box img {
+            width: 780px;
+            height: 360px;
+        }
+        .box a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            font-family: 宋体;
+            line-height: 60px;
+        }
+        .left {
+            width: 40px;
+            height: 60px;
+            background-color: #00000038;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border-radius: 0 100px 100px 0;
+            padding-right: 5px;
+        }
+        .right {
+            width: 40px;
+            height: 60px;
+            background-color: #00000038;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 100px 0 0 100px;
+            padding-left: 5px;
+        }
+        .left:hover,
+        .right:hover {
+            background-color: #00000078;
+        }
+        ul {
+            width: 100px;
+            height: 20px;
+            background-color: #ffffff6e;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            list-style: none;
+            border-radius: 100px;
+        }
+        ul li {
+            width: 10px;
+            height: 10px;
+            background-color: #ffffffc2;
+            float: left;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .yanse {
+            background-color: #935dcd;
+        }
+        ul li:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://dsfs.oppo.com/archives/202204/202204210204156260ffd3f3de1.jpg?_w_=2624&_h_=960">
+        <a href="" class="left">&lt;</a>
+        <a href="./OPPPO轮播图案例.html" class="right">&gt;</a>
+        <ul>
+            <li class="yanse"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

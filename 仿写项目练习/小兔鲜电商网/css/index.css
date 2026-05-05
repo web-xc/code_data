@@ -1,0 +1,261 @@
+/* 首页css内容 */
+.xtx-entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.xtx-banner {
+    position: relative;
+    height: 500px;
+}
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, .2) url(../images/sprites.png);
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.prev {
+    left: 260px;
+    background-position: 15px -60px;
+}
+.next {
+    right: 10px;
+    background-position: -22px -60px;
+}
+.circle {
+    position: absolute;
+    bottom: 31px;
+    left: 673px;
+}
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 0 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.circle .selected {
+    background-color: #fff;
+}
+.xtx-entry .w {
+    position: relative;
+}
+.xtx-category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);
+}
+.xtx-category li a {
+    position: relative;
+    display: block;
+    height: 50px;
+    color: #fff !important;
+    padding: 15px 20px 0 35px;
+    font-size: 14px;
+    transition: background-color .3s;
+}
+.xtx-category li a::after {
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    content: '';
+    width: 8px;
+    height: 13px;
+    background: url(../images/sprites.png) -40px -110px;
+}
+.xtx-category li span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.xtx-category li a:hover {
+    background-color: #27ba9b;
+}
+.xtx-new-goods {
+    margin-top: 48px;
+}
+.head {
+    height: 66px;
+}
+.head .title {
+    float: left;
+    font-weight: normal;
+    font-size: 29px;
+    color: #333;
+}
+.head .title span {
+    color: #999;
+    font-size: 16px;
+    margin-left: 34px;
+}
+.head .check-all {
+    float: right;
+    color: #999;
+    margin-top: 11px;
+}
+.head .check-all::after {
+    display: inline-block;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background: url(../images/sprites.png) 0 -110px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.list {
+    height: 405px; 
+}
+.list li {
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+.list li:nth-child(-n+3) {
+    margin-right: 8px;
+}
+.list img {
+    width: 100%;
+}
+.list .title {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+    margin: 15px 0 10px;
+}
+.list .price {
+    color: #9a2e1f;
+    font-size: 23px;
+}
+.list .price span {
+    font-size: 17px;
+}
+.list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.new {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 28px;
+    height: 51px;
+    border: 2px solid #27ba9b;
+    border-radius: 3px;
+    color: #27ba9b;
+}
+.xtx-popular {
+    margin-top: 48px;
+}
+.xtx-popular .list li {
+    background-color: #fff;
+}
+.list .desc {
+    color: #999;
+}
+.xtx-fresh-goods {
+    margin-top: 48px;
+}
+.fresh-goods-nav {
+    float: right;
+    margin-right: 50px;
+}
+.fresh-goods-nav li {
+    float: left;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+.fresh-goods-nav li a {
+    padding: 0 7px;
+}
+.fresh-goods-nav li a:hover {
+    background-color: #27ba9b;
+    color: #fff !important;
+}
+.goods-content {
+    height: 610px;
+    /* background-color: pink; */
+}
+.goods-pic {
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: orange;
+}
+.goods-list li {
+    position: relative;
+    float: left;
+    width: 242px;
+    height: 304px;
+    /* background-color: purple; */
+    margin-left: 8px;
+    padding: 8px 29px 0;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+.goods-list li:nth-child(-n+4) {
+    margin-bottom: 2px;
+}
+.goods-list img {
+    width: 184px;
+    height: 184px;
+}
+.goods-list .title {
+    font-size: 16px;
+    font-weight: normal;
+    height: 48px;
+    margin: 5px 0 15px;
+    /* 超出的部分省略号显示 */
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.goods-list .price {
+    color: #9a2e1f;
+    font-size: 22px;
+}
+.goods-list .price span {
+    font-size: 17px;
+}
+.goods-list-find {
+    position: absolute;
+    bottom: -84px;
+    left: 0;
+    width: 100%;
+    height: 84px;
+    background-color: #27ba9b;
+    text-align: center;
+    transition: all .4s;
+}
+.goods-list-find p:first-child {
+    width: 125px;
+    border-bottom: 2px solid #a9dbcc;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.goods-list-find p:last-child {
+    font-size: 13px;
+    color: #fff;
+}
+.goods-list li:hover .goods-list-find {
+    bottom: 0;
+}
+.goods-list li:hover {
+    border: 2px solid #27ba9b;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While+Switch实现ATM取款机</title>
+</head>
+<body>
+    <script>
+        // 3. 金额的变量, 先存储100
+        let money = 100
+        // 1. 不断弹出对话框
+        while (true) {
+            let operate = prompt(`
+            请输入您的操作:
+            1. 取钱
+            2. 存钱
+            3. 查看余额
+            4. 退出
+            `)
+            // 2. 输入4退出对话框 不输入则死循环弹出对话框
+            if (operate === '4') {
+                break
+            }
+            // 4. switch实现选项加减
+            switch (operate) {
+                case '1':
+                    let take = +prompt('请输入取钱金额:')
+                    money -= take
+                    break
+                case '2':
+                    let deposit = +prompt('请输入存钱金额:')
+                    money += deposit
+                    break
+                case '3':
+                    let see = alert(`您的金额还有${money}`)
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

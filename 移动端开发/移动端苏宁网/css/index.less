@@ -1,0 +1,266 @@
+// 在less中@import是把另外一个less文件引入到当前less文件当中
+@import "common.less";
+@basefont: 50;
+body {
+    min-width: (320rem / @basefont * 2);
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1;
+    background: #f2f2f2;
+    font-family: Arial,Helvetica;
+}
+.search_content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: (88rem / @basefont);
+    width: (750rem / @basefont);
+    background-color: #ffc001;
+    transform: translateX(-50%);
+    z-index: 1;
+    .classify {
+        width: (44rem / @basefont);
+        height: (70rem / @basefont);
+        margin: (11rem / @basefont) (25rem / @basefont) (7rem / @basefont) (24rem / @basefont);
+        background: url(../images/classify.png) no-repeat;
+        background-size: (44rem / @basefont) (70rem / @basefont);
+    }
+    .search {
+        flex: 1;
+    }
+    .search input {
+        width: 100%;
+        height: (66rem / @basefont);
+        margin-top: (12rem / @basefont);
+        padding-left: (55rem / @basefont);
+        border: 0;
+        color: #757575;
+        background-color: #fff2cc;
+        font-size: (25rem / @basefont);
+        border-radius: (33rem / @basefont);
+        outline: none;
+    }
+    .login {
+        width: (75rem / @basefont);
+        height: (70rem / @basefont);
+        margin: (10rem / @basefont);
+        color: #fff;
+        text-align: center;
+        font-size: (25rem / @basefont);
+        line-height: (70rem / @basefont);
+    }
+}
+.banner {
+    width: (750rem / @basefont);
+    height: (368rem / @basefont);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: (750rem / @basefont);
+    a {
+        width: (150rem / @basefont);
+        height: (140rem / @basefont);
+        text-align: center;
+        img {
+            display: block;
+            width: (82rem / @basefont);
+            height: (82rem / @basefont);
+            margin: (10rem / @basefont) auto 0;
+        }
+        span {
+            color: #333;
+            font-size: (25rem / @basefont);
+        }
+    }
+}
+.ad_second {
+    display: flex;
+    margin-top: (20rem / @basefont);
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+.hot {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: (112rem / @basefont * 2);
+    margin-top: (10rem / @basefont * 2);
+    .ad_content {
+        display: flex;
+    }
+    .bg_left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: (171rem / @basefont * 2);
+        height: (105rem / @basefont * 2);
+        padding: 0 (10rem / @basefont * 2) 0 (10rem / @basefont * 2);
+        z-index: -9999;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    a:nth-child(4) {
+        left: (180rem / @basefont * 2);
+    }
+    a:nth-child(5) span {
+        left: (204rem / @basefont * 2);
+    }
+    a:nth-child(6) span {
+        left: (290rem / @basefont * 2);
+    }
+    .pro {
+        padding: (25rem / @basefont * 2) 0 0 (20rem / @basefont * 2);
+        img {
+            width: (67rem / @basefont * 2);
+            height: (67rem / @basefont * 2);
+        }
+        span {
+            position: absolute;
+            left: (31rem / @basefont * 2);
+            bottom: (20rem / @basefont * 2);
+            padding: 0 (7rem / @basefont * 2);
+            color: #FF0000;
+            background: #FFEBEB;
+            font-size: (12rem / @basefont * 2);
+            border-radius: (10rem / @basefont * 2);
+        }
+    }
+    .pro:nth-child(2) span {
+        left: (115rem / @basefont * 2);
+    }
+}
+.goods {
+    height: (700rem / @basefont * 2);
+    margin-top: (20rem / @basefont * 2);
+    .like {
+        width: (750rem / @basefont);
+        height: (38rem / @basefont * 2);
+        background: url(../upload/like.webp) no-repeat;
+        background-size: (380rem / @basefont * 2) (32rem / @basefont * 2);
+    }
+    .tips {
+        margin-top: (13rem / @basefont * 2);
+        font-size: (18rem / @basefont * 2);
+        text-align: center;
+    }
+}
+.goods_content {
+    display: flex;
+    justify-content: space-between;
+    width: (750rem / @basefont);
+    height: (275rem / @basefont * 2);
+    .goods_left {
+        padding: 0 0 0 (10rem / @basefont * 2);
+    }
+    .goods_right {
+        padding: 0 (10rem / @basefont * 2) 0 0;
+    }
+    .goods_list {
+        overflow: hidden;
+        width: (173rem / @basefont * 2);
+        height: (260rem / @basefont * 2);
+        background-color: #fff;
+        border-radius: (8rem / @basefont * 2);
+        img {
+            width: (173rem / @basefont * 2);
+            height: (182rem / @basefont * 2);
+        }
+        p {
+            /* 溢出显示省略号 */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            padding: 0 (10rem / @basefont * 2) (2rem / @basefont * 2) (10rem / @basefont * 2);
+            color: #000;
+            font-size: (12rem / @basefont * 2);
+            font-weight: 700;
+        }
+        span {
+            padding-left: (6rem / @basefont * 2);
+            color: #ff4422;
+            font-size: (18rem / @basefont * 2);
+        }
+    }
+}
+.tab_ues {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: (750rem / @basefont);
+    height: (55rem / @basefont * 2);
+    margin: 0 auto;
+    background-color: #fff;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #666;
+        font-size: (12rem / @basefont * 2);
+        & [class^='tab_icon'] {
+            width: (26rem / @basefont * 2);
+            height: (26rem / @basefont * 2);
+            background: url(../upload/tab1.png) no-repeat;
+            background-size: (26rem / @basefont * 2) (26rem / @basefont * 2);
+        }
+        .tab_icon_icon2 {
+            background: url(../upload/tab2.png) no-repeat;
+            background-size: (26rem / @basefont * 2) (26rem / @basefont * 2);
+        }
+        .tab_icon_icon3 {
+            background: url(../upload/tab3.png) no-repeat;
+            background-size: (26rem / @basefont * 2) (26rem / @basefont * 2);
+        }
+        .tab_icon_icon4 {
+            background: url(../upload/tab4.png) no-repeat;
+            background-size: (26rem / @basefont * 2) (26rem / @basefont * 2);
+        }
+        .tab_icon_icon5 {
+            background: url(../upload/tab5.png) no-repeat;
+            background-size: (26rem / @basefont * 2) (26rem / @basefont * 2);
+        }
+        span {
+            margin-top: (3.5rem / @basefont * 2);
+            font-size: (12rem / @basefont * 2);
+        }
+    }
+}
+.side_use {
+    position: fixed;
+    right: 0;
+    bottom: (60rem / @basefont * 2);
+    width: (54rem / @basefont * 2);
+    height: (54rem / @basefont * 2);
+    a {
+        display: block;
+        width: (54rem / @basefont * 2);
+        height: (54rem / @basefont * 2);
+        background: url(../images/side.png) no-repeat;
+        background-size: (54rem / @basefont * 2) (54rem / @basefont * 2);
+    }
+}

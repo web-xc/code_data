@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组生成柱形图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: 50px auto;
+            width: 700px;
+            height: 300px;
+            text-align: center;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .box > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50px;
+            background-color: #0019ff8a;
+        }
+        .box div span {
+            margin-top: -20px;
+        }
+        .box div h4 {
+            margin-left: -10px;
+            margin-bottom: -35px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 用循环弹出四次输入框, 会得到4个数据，放到num1数组里
+        let num1 = []
+        for (let num2 = 1; num2 <= 4; num2++) {
+            num1.push(prompt(`请输入第${num2}季度数据`))
+        }
+        console.log(num1)
+
+        // 注意渲染循环的是柱子
+        document.write(`<div class ="box">`)
+        // 循环4个柱子
+            for (let num2 = 0; num2 < num1.length; num2++) {
+                document.write(`
+                  <div style="height: ${num1[num2]}px;">
+                      <span>${num1[num2]}</span>
+                      <h4>第${num2 + 1}季度</h4>
+                  </div>
+             `)
+            }
+        document.write(`</div>`)
+    </script>
+</body>
+</html>

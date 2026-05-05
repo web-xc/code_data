@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL图片放大缩小.html</title>
+    <style>
+        body {
+            margin: 0;
+            /* 背景图片路径 */
+            background-image: url("../../images/bgi.jpg");
+        }
+        .box {
+            margin: 100px auto; /* 外边距 上下 左右 */
+            width: 820px;
+            height: 620px;
+            /* background-color: red; */
+        }
+        img {
+            float: left;
+            width: 200px;
+            height: 300px;
+            /* transform: scale(1,1.5); 变形 伸缩 宽度 高低 */
+            /* 过度为 0.3秒 */
+            transition: 0.3s;
+        }
+        .img1:hover {
+            /* 鼠标移入动画 */
+            transform: scale(1,1.5);
+        }
+        .img2:hover {
+            /* 鼠标移入动画 */
+            transform: scale(.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子标签： -->
+    <div class="box">
+        <img class="img1" src="../../images/1.jpg">
+        <img class="img1" src="../../images/2.jpg">
+        <img class="img1" src="../../images/3.jpg">
+        <img class="img1" src="../../images/4.jpg">
+        <img class="img2" src="../../images/5.jpg"> 
+        <img class="img2" src="../../images/6.jpg">
+        <img class="img2" src="../../images/7.jpg">
+        <img class="img2" src="../../images/8.jpg">
+        <!-- 盒子里面包含的8个图片 -->
+    </div>
+</body>
+</html>

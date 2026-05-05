@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-if-用户登录验证</title>
+</head>
+<body>
+    <script>
+        // 若用户名为admin, 且密码为123456, 则提示用户登录, 否则, 让用户一直输入
+        let username = prompt('请输入用户名')
+        let password = prompt('请输入密码')
+        while (true) {
+            if (username == 'admin' && password == 123456) {
+                alert('登录成功')
+                break
+            } else {
+                alert('用户名或密码错误, 请重新输入')
+                let username = prompt('请输入用户名')
+                let password = prompt('请输入密码')
+                if (username == 'admin' && password == 123456) {
+                    alert('登录成功')
+                    break
+                }
+            }
+        }
+    </script>
+</body>
+</html>

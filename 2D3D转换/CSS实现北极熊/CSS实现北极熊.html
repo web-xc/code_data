@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS实现北极熊奔跑动画</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e6eef0;
+        }
+        .bg1 {
+            position: relative;
+            height: 400px;
+            background: url(../CSS实现北极熊/back1.png);
+            animation: bg1move 180s linear alternate forwards;
+        }
+        .bg2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background: url(../CSS实现北极熊/back.png) no-repeat;
+            animation: bg2move 180s linear alternate forwards;
+        }
+        .card {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            background: url(../CSS实现北极熊/bjx.png) no-repeat;
+            animation: move .8s steps(8) infinite,left linear 8s forwards;
+        }
+        @keyframes move {
+            0% {}
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes left {
+            0% {}
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @keyframes bg1move {
+            0% {}
+            100% {
+                background-position: -5000px 0;
+            }
+        }
+        @keyframes bg2move {
+            0% {}
+            100% {
+                background-position: -9000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1">
+        <div class="bg2">
+            <div class="card"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传智播客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f3f3f3;
+        }
+        .nav {
+            height: 40px;
+            background-color: #055c92;
+        }
+        .box {
+            width: 1200px;
+            height: 40px;
+            margin: auto;
+        }
+        .box-left {
+            float: left;
+        }
+        .box-left p {
+            color: #fff;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .box-right {
+            float: right;
+        }
+        .box-right p {
+            color: #fff;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .banner {
+            height: 553px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 30px;
+        }
+        .banner-one {
+            width: 1200px;
+            height: 40px;
+            margin: auto;
+        }
+        .banner-two {
+            height: 113px;
+            background-color: rgb(255, 255, 255);
+        }
+        .banner-one i {
+            float: left;
+            width: 166px;
+            height: 53px;
+            line-height: 113px;
+            margin-right: 65px;
+            margin-top: 30px;
+            background: url(../images/logo4.png);
+        }
+        .banner-two li {
+            float: left;
+            list-style: none;
+        }
+        .banner-two li a {
+            color: #333333;
+            text-decoration: none;
+            line-height: 113px;
+            margin-right: 26px;
+        }
+        .banner-two li a:hover {
+            color: #0992e7;
+        }
+        .banner-three {
+            height: 400px;
+        }
+        .three-left {
+            float: left;
+            width: 960px;
+            height: 400px;
+            background: url(../images/banner.jpg) no-repeat;
+        }
+        .three-right {
+            float: right;
+            width: 232px;
+            height: 400px;
+            background-color: #d5d5d56b;
+        }
+        .three-right h3 {
+            background-color: #055c92;
+            font-size: 16px;
+            font-weight: normal;
+            width: 232px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #fff;
+        }
+        .three-right ul {
+            margin-top: 25px;
+        }
+        .three-right li {
+            padding-bottom: 15px;
+            padding-left: 15px;
+            list-style: none;
+            background: url(../images/square_03.png) no-repeat 5px 10px;
+        }
+        .three-right li a {
+            color: #000;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .three-right li a:hover {
+            color: #0992e7;
+            text-decoration: underline;
+        }
+        .center {
+            height: 352px;
+            margin-bottom: 60px;
+        }
+        .center-box {
+            width: 1200px;
+            height: 352px;
+            margin: auto;
+            background-color: #f3f3f3;
+        }
+        .center-left {
+            float: left;
+            width: 232px;
+            height: 352px;
+            background: url(../images/考题_r2_c2.png) no-repeat;
+            margin-right: 16px;
+            transition: all .4s;
+        }
+        .center-right {
+            float: right;
+            width: 952px;
+            height: 352px;
+        }
+        .center-right .center-box {
+            float: left;
+            width: 227px;
+            height: 170px;
+            background-color: #fff;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            transition: all .4s;
+        }
+        .center-box:nth-child(4) {
+            margin-right: 0;
+        }
+        .center-box:nth-child(8) {
+            margin-right: 0;
+        }
+        .center-right .center-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 5px 0px #0000003b;
+        }
+        .center-left:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 5px 0px #0000003b;
+        }
+        .center-box img {
+            margin-left: 75px;
+            margin-top: 30px;
+        }
+        .center-box p {
+            margin: 25px;
+            text-align: center;
+        }
+        .center-box:nth-child(4) p {
+            margin: 8px;
+        }
+        .footer {
+            height: 440px;
+            background-color: #fff;
+        }
+        .footer-box {
+            width: 1200px;
+            height: 440px;
+            margin: auto;
+        }
+        .footer-box dl {
+            float: left;
+        }
+        .footer-box dt {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-right: 105px;
+            margin-bottom: 15px;
+        }
+        .footer-box dd {
+            color: #8d8d8d;
+            margin-bottom: 8px;
+        }
+        .footer-box dd:hover {
+            color: #0992e7;
+        }
+        .footer-one {
+            float: left;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-top: 2px solid #e6e6e6;
+            border-bottom: 2px solid #e6e6e6;
+        }
+        .footer-one h3 {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 10px 0 10px 0;
+        }
+        .footer-one p {
+            float: left;
+            color: #8d8d8d;
+            margin: 0 10px 16px 0;
+        }
+        .footer-two i {
+            float: left;
+            width: 166px;
+            height: 53px;
+            margin-right: 50px;
+            background: url(../images/logo4.png);
+        }
+        .footer-two p {
+            float: left;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="box">
+            <div class="box-left">
+                <p>传智播客旗下品牌：  黑马程序员  |  博学谷</p>
+            </div>
+            <div class="box-right">
+                <p>改变中国IT教育，我们正在行动&nbsp;&nbsp;全国咨询热线：400-618-4000</p>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-one">
+            <div class="banner-two">
+            <i></i>
+            <ul>
+                <li><a href="">免费学习资源</a></li>
+                <li><a href="">课程中心</a></li>
+                <li><a href="">原创教材</a></li>
+                <li><a href="">学员故事</a></li>
+                <li><a href="">传智社区</a></li>
+            </ul>
+         </div>
+         <div class="banner-three">
+             <div class="three-left"></div>
+             <div class="three-right">
+                 <h3>信息港</h3>
+                 <ul>
+                     <li><a href="">2016年传智各学科学费价格表   </a></li>
+                     <li><a href="">全国新开校区，前三期立减1998！</a></li>
+                     <li><a href="">零基础，1元上30天完整IT入门课程</a></li>
+                     <li><a href="">UI设计打造会代码的全能设计师</a></li>
+                     <li><a href="">打造Python前后端全栈开发工程师</a></li>
+                     <li><a href="">Android入门易成长快，岂止高薪！</a></li>
+                     <li><a href="">PHP助你快速入门，就业冲击10k+</a></li>
+                     <li><a href="">iOS，4个月即可引领IT“薪”革命</a></li>
+                     <li><a href="">延续40年经典—永不过时的C/C++</a></li>
+                 </ul>
+             </div>
+         </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center-box">
+            <div class="center-left"></div>
+            <div class="center-right">
+                <div class="center-box">
+                    <img src="../images/icon1.png" alt="">
+                    <p>课程介绍</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon2.png" alt="">
+                    <p>课程大纲</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon3.png" alt="">
+                    <p>开班时间</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon4.png" alt="">
+                    <p>师资库</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon5.png" alt="">
+                    <p>就业薪资</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon6.png" alt="">
+                    <p>班级活动</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon7.png" alt="">
+                    <p>公开课</p>
+                </div>
+                <div class="center-box">
+                    <img src="../images/icon8.png" alt="">
+                    <p>视频下截</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer">
+            <div class="footer-box">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>传智简介</dd>
+                    <dd>加入传智</dd>
+                    <dd>联系传智</dd>
+                </dl>
+                <dl>
+                    <dt>旗下品牌</dt>
+                    <dd>黑马程序员</dd>
+                    <dd>博学谷</dd>
+                </dl>
+                <dl>
+                    <dt>校区攻略</dt>
+                    <dd>校区环境</dd>
+                    <dd>住宿攻略</dd>
+                    <dd>来校路线</dd>
+                </dl>
+                <dl>
+                    <dt>学习资源</dt>
+                    <dd>视频库</dd>
+                    <dd>公开课</dd>
+                    <dd>云课堂</dd>
+                    <dd>传智商城</dd>
+                </dl>
+                <dl>
+                    <dt>传智故事</dt>
+                    <dd>学员故事</dd>
+                    <dd>科技喵喵喵</dd>
+                </dl>
+                <div class="footer-one">
+                    <h3>友情链接</h3>
+                    <p>黑马程序员 </p>
+                    <p>博学谷</p>
+                    <p>首席营销官 </p>
+                    <p>雅思 </p>
+                    <p>ThinkPHP框架 </p>
+                    <p>进销存软件 </p>
+                    <p>在职研究生 </p>
+                    <p>职称计算机考试 </p>
+                    <p>武汉房产网 </p>
+                    <p>中国教育网 </p>
+                    <p>视频教程网 </p>
+                    <p>论文查重 </p>
+                    <p>听课网 </p>
+                    <p>PPT模板 </p>
+                    <p>求职信 </p>
+                    <p>CCNA </p>
+                    <p>我爱IT技术网 </p>
+                    <p>云计算 </p>
+                    <p>标准下载 </p>
+                    <p>图片制作 </p>
+                    <p>五笔输入法下载 </p>
+                    <p>中国在职研究生网 </p>
+                    <p>电脑主题 </p>
+                    <p>123标志设计网 </p>
+                    <p>新东方小语种 </p>
+                    <p>java1234 </p>
+                    <p>培训师 </p>
+                    <p>酷素材 </p>
+                    <p>3d模型下载 </p>
+                    <p>申请传智播客友链</p>
+                </div>
+                <div class="footer-two">
+                    <i></i>
+                    <p>版权所有 2006 - 2016 北京传智播客教育科技有限公司 地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096</p>
+                    <p>电话：010-82935150/60/70 邮箱: zhanghj@itcast.cn 京ICP备08001421号 京公网安备110108007702</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.w {
+    margin: 0 auto;
+    width: 1200px;
+}
+.header {
+    height: 80px;
+}
+.logo h1 {
+    display: none;
+}
+.logo img {
+    margin-top: 25px;
+}
+.logo h2 {
+    margin-top: -52px;
+    color: #020300;
+    font-size: 30px;
+    font-family: 宋体;
+    font-weight: normal;
+    text-align: center;
+}
+.sign_in {
+    height: 463px;
+    background-color: #7e00ff;
+}
+.banner {
+    position: relative;
+    margin-top: 15px;
+    height: 463px;
+    background: url(../images/banner.png) no-repeat -250px;
+}
+.sign {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+	width: 379px;
+	height: 362px;
+	background-color: #fff;
+    border-radius: 10px;
+}
+.option {
+    height: 58px;
+}
+.option ul li {
+    float: left;
+    line-height: 58px;
+}
+.option ul li:first-child a {
+    border-right: 1px solid #ccc;
+}
+.option ul li a {
+    padding: 0 58px;
+    height: 20px;
+    font-size: 18px;
+}
+.be {
+    margin: 10px auto;
+	width: 303px;
+	height: 26px;
+    line-height: 26px;
+    text-align: center;
+	background-color: #faf4c5;
+	border: solid 1px #f5eecf;
+}
+.information ul li {
+    position: relative;
+    padding-bottom: 15px;
+}
+.information input {
+    display: block;
+    margin: 0 auto;
+    width: 303px;
+	height: 36px;
+    text-indent: 3em;
+	border: solid 1px #3aa2e4;
+}
+.information ul .after::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 39px;
+    width: 35px;
+	height: 34px;
+    background: url(../images/phone.jpg) no-repeat;
+}
+.information ul .after:nth-child(2)::after {
+    background: url(../images/key.jpg) no-repeat;
+}
+.information .function {
+    float: left;
+    margin-left: 39px;
+    width: 303px;
+    height: 35px;
+    line-height: 35px;
+}
+.function input {
+    float: left;
+    width: 14px;
+}
+.function a {
+    float: right;
+    color: #333333;
+}
+.function a:hover {
+    color: #c81623;
+}
+.function button {
+    display: block;
+	width: 303px;
+	height: 41px;
+    color: #fff;
+    font-size: 16px;
+	background-color: #c81623;
+}
+.contact {
+    float: left;
+    margin-top: 20px;
+}
+.register a {
+    margin-top: 20px;
+    color: #1474af;
+    font-size: 14px;
+    line-height: 54px;
+}
+.service_copyright {
+    text-align: center;
+}
+.links {
+    margin: 15px 0 15px 0;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 30px;
+}

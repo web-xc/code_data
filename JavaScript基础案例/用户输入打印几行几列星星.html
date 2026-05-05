@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户输入打印几行几列星星</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt('请输入多少行个星星')
+        let num2 = prompt('请输入多少列个星星')
+        for (let num3 = 1; num3 <= num1; num3++) {
+            for (let num4 = 1; num4 <= num2; num4++) {
+                document.write('💚')
+            }
+            document.write(`<br>`)
+        }
+    </script>
+</body>
+</html>

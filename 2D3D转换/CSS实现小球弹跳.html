@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS实现小球弹跳</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            width: 600px;
+            height: 200px;
+            margin: 150px auto;
+        }
+        .box1 {
+            position: absolute;
+            left: 10px;
+            bottom: 15px;
+            width: 50px;
+            height: 50px;
+            background: -webkit-linear-gradient(#e55, #b00);
+            border-radius: 50%;
+            z-index: 1;
+            animation: move 600ms alternate infinite;
+        }
+        @keyframes move {
+            0% {
+                
+            }
+            100% {
+                transform: translateY(-150px);
+            }
+        }
+        .sho {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 75px;
+            height: 40px;
+            background-color: #000;
+            border-radius: 100%;
+            animation: sho 600ms infinite alternate;
+        }
+        @keyframes sho {
+            0% {
+                opacity: .2;
+                transform: scale(0.75);
+            }
+            100% {
+                opacity: .05;
+                transform: scale(1);
+            }
+        }
+        .box2 {
+            left: 160px;
+            background: -webkit-linear-gradient(rgb(161, 201, 128), rgb(1, 99, 37));
+            animation-delay: 80ms;
+        }
+        .box3 {
+            left: 300px;
+            background: -webkit-linear-gradient(#00a8ff, #8c7ae6);
+            animation-delay: 140ms;
+        }
+        .sho2 {
+            left: 147px;
+        }
+        .sho3 {
+            left: 287px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="sho"></div>
+        <div class="box1 box2"></div>
+        <div class="sho sho2"></div>
+        <div class="box1 box3"></div>
+        <div class="sho sho3"></div>
+    </div>
+</body>
+</html>

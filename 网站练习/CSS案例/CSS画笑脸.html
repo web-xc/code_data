@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS画笑脸</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #a89494;
+        }
+        .box {
+            width: 320px;
+            height: 300px;
+            /* background-color: orange; */
+            margin: 100px auto;
+        }
+        .one {
+            width: 300px;
+            height: 300px;
+            background-color: #e4d104;
+            border-radius: 100%;
+            margin-left: 10px;
+            position: relative;
+        }
+        .left {
+            width: 56px;
+            height: 56px;
+            background-color: #000;
+            float: left;
+            border-radius: 100%;
+            padding-bottom: 3px;
+        }
+        .right {
+            width: 56px;
+            height: 56px;
+            background-color: #000;
+            float: right;
+            border-radius: 100%;
+            padding-bottom: 3px;
+        }
+        .left1 {
+            width: 41px;
+            height: 55px;
+            background-color: #000;
+            position: absolute;
+            top: 20%;
+            left: 70px;
+            border-radius: 100%;
+        }
+        .right1 {
+            width: 41px;
+            height: 55px;
+            background-color: #000;
+            position: absolute;
+            top: 20%;
+            right: 70px;
+            border-radius: 100%;
+        }
+        .center {
+            width: 96px;
+            height: 43px;
+            background-color: crimson;
+            border-radius: 100%;
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            margin-left: -20px;
+        }
+        .one:hover {
+            background-color: #8576a5;
+            transition: all 2s; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="one">
+            <div class="left1"></div>
+            <div class="right1"></div>
+            <div class="center"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D转换-旋转木马</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        }
+        body {
+            perspective: 2000px;
+        }
+        section {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 150px auto;
+            transform-style: preserve-3d;
+            animation: section 10s linear infinite;
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/wy/wym8d6.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+            border-radius: 20px;
+        }
+        section:hover {
+            animation: section 15s linear infinite;
+        }
+        @keyframes section {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        section div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/x8/x8gvez.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+            border-radius: 20px;
+        }
+        section div:first-child {
+            transform: rotateY(0) translateZ(400px);
+        }
+        section div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(400px);
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/8o/8old52.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+        }
+        section div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(400px);
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/e7/e7g71w.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+        }
+        section div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(400px);
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/j3/j3m22p.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+        }
+        section div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(400px);
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/v9/v9w635.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+        }
+        section div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(400px);
+            background: url(https://dogefs.s3.ladydaily.com/~/source/wallhaven/small/g7/g73y77.jpg?w=300&h=200&fmt=webp) no-repeat;
+            background-size: 300px 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

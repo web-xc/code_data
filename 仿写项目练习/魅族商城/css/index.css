@@ -1,0 +1,504 @@
+/* 主内容 */
+.main {
+    overflow: hidden;
+    min-width: 1240px;
+    height: 6485px;
+    background: #f4f4f4;
+}
+
+.news {
+    height: 495px;
+}
+
+.news .title {
+    height: 45px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: normal;
+}
+
+.news-hd img {
+    width: 100%;
+    height: 480px;
+}
+
+.content {
+    height: 1005px;
+    text-align: center;
+    margin-top: 42px;
+}
+
+.commodity-one {
+    position: relative;
+    float: left;
+    width: 615px;
+    height: 610px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.content li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.commodity-one .title {
+    color: #333;
+    margin-top: 58px;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.commodity-one .describe {
+    margin-bottom: 3px;
+    color: #333;
+    font-size: 18px;
+}
+
+.commodity-one .price {
+    display: block;
+    color: #c00;
+    font-size: 22px;
+}
+
+.commodity-one a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.price i {
+    font-size: 14px;
+}
+
+.price em {
+    font-size: 16px;
+}
+
+.price s {
+    margin-left: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.commodity-one img {
+    width: 460px;
+    height: 460px;
+}
+
+.commodity-two {
+    position: relative;
+    float: left;
+    width: 303px;
+    height: 375px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.content li:nth-child(4) {
+    margin-right: 8px;
+}
+
+.commodity-two img {
+    margin-top: 25px;
+    width: 230px;
+    height: 230px;
+}
+
+.commodity-two .title-two {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.commodity-two .describe-two {
+    color: #999;
+    font-size: 14px;
+}
+
+.commodity-two .price-two {
+    color: #c00;
+    font-size: 22px;
+}
+
+.commodity-two a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.commodity-two i {
+    font-size: 14px;
+}
+
+.commodity-two em {
+    font-size: 16px;
+}
+
+.commodity-two s {
+    margin-left: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.hot {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+    font-size: 16px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.content li {
+    transition: all .3s;
+}
+
+.content li:hover,
+.page {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+.content-two li {
+    margin-top: 10px;
+}
+
+.content-two ul .new {
+    margin-right: 8px;
+}
+
+.content-two ul .independent {
+    margin-right: 0;
+}
+
+.content-two .page {
+    position: relative;
+    background: url(https://fms.res.meizu.com/dms/2022/02/25/4197cdad-be8f-456d-b61d-7d06256cbf20.jpg);
+    background-size: contain;
+}
+
+.page .title-two {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.page .describe-two {
+    color: #fff;
+}
+
+.page .price-two {
+    color: #ebce6b;
+    font-weight: bold;
+}
+
+.page s {
+    color: #fff;
+}
+
+.page .goods-box {
+    position: absolute;
+    top: 245px;
+    left: 20px;
+    text-align: center;
+}
+
+.content-two .page-two {
+    background: url(https://fms.res.meizu.com/dms/2022/05/20/dbe7b6f3-87d2-4c8a-a850-708fd0135595.jpg);
+    background-size: contain;
+}
+
+.news-two {
+    margin-top: -180px;
+}
+
+.content-two .page-three {
+    background: url(https://fms.res.meizu.com/dms/2022/04/28/34016a56-584e-42d8-9b3c-b1d329b3ca9e.jpg);
+    background-size: contain;
+}
+
+.content-two .page-four {
+    background: url(https://fms.res.meizu.com/dms/2022/06/09/6b962d47-1ad9-499d-ae1a-a47f9a193647.jpg);
+    background-size: contain;
+}
+
+.content .hots {
+    background-image: linear-gradient(120deg, #ff910e, #ffd037);
+}
+
+.post {
+    margin-top: -195px;
+    height: 794px;
+}
+
+.post .title,
+.post-two .title-three {
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 45px;
+}
+
+.post ul {
+    height: 794px;
+}
+
+.post li {
+    float: left;
+    width: 303px;
+    height: 388px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: all.3s;
+}
+
+.post li:nth-child(2),
+.post li:nth-child(6) {
+    margin-right: 8px;
+}
+
+.post li:nth-child(4),
+.post li:nth-child(8) {
+    margin-right: 0;
+}
+
+.post-box .post-img img {
+    width: 303px;
+    height: 190px;
+}
+
+.post-box .comment {
+    overflow: hidden;
+    height: 42px;
+    margin-top: 10px;
+    padding: 0 15px;
+    line-height: 42px;
+}
+
+.comment img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 1px 1px #eee;
+}
+
+.post-box .comment-username {
+    margin-left: 15px;
+    color: #515151;
+}
+
+.post-box p {
+    height: 66px;
+    padding: 25px 20px 16px;
+    color: #515151;
+    font-size: 16px;
+}
+
+.post-box .comment-tip {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #999;
+}
+
+.post li:hover,
+.post-two li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+.post-two {
+    height: 520px;
+    margin-top: 90px;
+}
+
+.post-two li {
+    position: relative;
+    float: left;
+    width: 303px;
+    height: 245px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    transition: all .3s;
+}
+
+.post-two .special,
+.post-two .special img {
+    width: 615px;
+    height: 245px;
+}
+
+.post-two li:nth-child(1),
+.post-two li:nth-child(5),
+.post-two .sign:nth-child(3),
+.post-two .sign:nth-child(7) {
+    margin-right: 8px;
+}
+
+.post-two li:nth-child(3),
+.post-two li:nth-child(7),
+.post-two .sign-one:nth-child(4),
+.post-two .sign-one:nth-child(8) {
+    margin-right: 0;
+}
+
+.post-two .normal img {
+    width: 303px;
+    height: 190px;
+}
+
+.post-two .normal p {
+    color: #515151;
+    font-size: 16px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.post-two i {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/video.png);
+    background-size: contain;
+}
+
+footer {
+    height: 319px;
+    background-color: #fff;
+}
+
+footer .service {
+    height: 85px;
+}
+
+footer .service li {
+    float: left;
+    width: 120px;
+    height: 69px;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+footer .service li a {
+    display: block;
+    overflow: hidden;
+}
+
+footer .service li img {
+    display: block;
+    width: 50px;
+    height: 39px;
+    margin-left: 35px;
+}
+
+footer .service li span {
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.contact {
+    float: right;
+    width: 156px;
+    height: 103px;
+    margin-top: -65px;
+}
+
+.contact span {
+    float: right;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.contact p {
+    color: #008cff;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.contact a {
+    float: right;
+    overflow: hidden;
+    width: 88px;
+    height: 30px;
+    padding: 0 16px;
+    color: #fff;
+    line-height: 30px;
+    background: #008cff;
+    border-radius: 20px;
+}
+
+footer .footer-hr {
+    display: block;
+    height: 1px;
+    margin: 55px auto 28px;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.meizu-footer-co {
+    height: 127px;
+}
+
+.co-mod {
+    float: left;
+}
+
+.co-mod li {
+    float: left;
+    height: 18px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #d6d6d6;
+}
+
+.co-mod li:last-child {
+    border: 0;
+}
+
+.co-mod li a {
+    color: #999999;
+    font-size: 12px;
+
+}
+
+.certificate p {
+    float: left;
+    height: 36px;
+    margin-top: 15px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.meizu-footer-co .certificate a {
+    float: left;
+    height: 36px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.co-mod a:hover,
+.certificate a:hover {
+    color: #008cff;
+}
