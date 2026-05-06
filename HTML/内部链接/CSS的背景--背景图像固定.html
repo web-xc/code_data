@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的背景--背景图像固定</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            -webkit-text-size-adjust: 100%;
+        }
+        h2 {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+            background-attachment: scroll fixed;
+        }
+        .biaoge {
+            background-color: rgb(165, 146, 146);
+            color: rgb(8, 8, 8);
+            width: 20opx;
+            height: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 255, 98);
+        }
+        .daima {
+            color:#86ff00;
+        }
+        .anli {
+            width: 150px;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">CSS--背景图像固定</div>
+    <p>背景属性可以设置（背景图像固定）等...</p>
+            <!-- 下面是本页面目录 -->
+            <p>本页面目录：</p>
+            <ui>
+                <a href="#gd"><li>背景图像固定（背景附着）</li></a>
+                <a href="#fh"><li>背景复合写法</li></a>
+                <a href="#btm"><li>背景色半透明</li></a>
+                <a href="#zj"><li>背景图像总结</li></a>
+            </ui>
+    <!-- CSS的背景--背景图像固定（背景附着） -->
+    <h2 id="gd">1️⃣背景图像固定（背景附着）:</h2>
+    <p>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动</p>
+    <p>background-attachment 后期可以制作视差滚动的效果</p>
+    <h3>fixed背景图像固定案例：<a href="CSS背景图像固定(背景附着)案例.html" target="_blank" >点击查看</a></h3>
+    <img src="../编程截图/CSS背景图像固定-背景附着代码.png" width="285px" height="110px">
+    <!-- 下面是背景图像固定（背景附着）总结表格； -->
+        <table border="1" cellpadding="15" cellspacing="0" class="biaoge"> <br>
+            <tr>
+                <th>参数值</th>
+                <th>作用</th>
+            </tr>
+            <tr>
+                <td>scroll</td>
+                <td>背景图像是随对象内容滚动</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>背景图像固定</td>
+            </tr>
+        </table>
+        <!-- 下面是背景复合写法； -->
+        <h2 id="fh">2️⃣背景复合写法：</h2>
+        <p>为了简化背景属性的代码，我们可以将这些属性合并简写在同一属性background中，从而节约代码量</p>
+        <h3>当使用简写属性时，没有特定的书写顺序，一般习惯约定顺序：</h3>
+        <p class="daima">background：背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置;</p>
+        <img src="../编程截图/CSS背景复合写法代码.png" width="385px" height="110px">
+        <p>这是实际开发中，我们更提倡的写法</p>
+        <!-- 下面是CSS背景色半透明： -->
+        <h2 id="btm">3️⃣背景色半透明：</h2>
+        <p>CSS为我们提供了背景颜色半透明效果:🌈</p>
+        <ui>
+            <li>代码为：background：rgba(0 ,0 ,0 ,0.3)</li>
+            <li>最后一个参数是 alpha 透明度，取值范围在0~1之间</li>
+            <li>我们习惯把0.3 的0 省略掉，写为background: rgba( 0, 0, 0, .3);</li>
+            <li>注意：背景半透明是指盒子背景半透明，盒子里面的内容不受影响</li>
+            <li>CSS3 新增属性，是IE9+ 版本浏览器才支持的</li>
+            <li>但是现在实际开发，我们不太关注兼容性写法了，可以放心使用</li>
+        </ui>
+        <!-- 下面是背景半透明案例： -->
+        <h3>背景半透明案例：</h3>
+        <div class="anli">隐形的翅膀</div>
+        <!-- 下面是复合选择器的总结 -->
+                <h2 id="zj">4️⃣背景总结：</h2>
+                <table align="center" width="900" height="549" border="1" cellpadding="15" cellspacing="0" class="biaoge"><br>
+                    <thead>
+                     <tr>
+                      <th>属性</th>
+                      <th>作用</th>
+                      <th>值</th>
+                     </tr>
+                    </thead>
+                     <tbody>
+                    <tr>
+                     <td>background-color</td>
+                     <td>背景颜色</td>
+                     <td>预定义的颜色值/十六进制/RGB代码</td>
+                    </tr>
+                    <tr>
+                     <td>background-image</td>
+                     <td>背景图片</td>
+                     <td>url(图片路径)</td>
+                    </tr>
+                    <tr>
+                     <td>background-repeat</td>
+                     <td>是否平铺</td>
+                     <td>repeat/no-repeat/repeat-x/repeat-y</td>
+                    </tr>
+                    <tr>
+                     <td>background-position</td>
+                     <td>背景位置</td>
+                     <td>length/position 分别是 x 和 y 坐标</td>
+                    </tr>
+                    <tr>
+                     <td>background-attachment</td>
+                     <td>背景附着</td>
+                     <td>scroll（背景滚动）/fixed（背景固定）</td>
+                    </tr>
+                    <tr>
+                        <td>背景简写</td>
+                        <td>书写更简单</td>
+                        <td>背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;</td>
+                    </tr>
+                    <tr>
+                        <td>背景色半透明</td>
+                        <td>背景颜色半透明</td>
+                        <td>background: rgba( 0, 0, 0,0.3); 后面必须是4个值</td>
+                    </tr>
+                    </table> <br>
+                    <p>背景图片：实际开发常见于logo或者一些装饰性的小图片或者是超大的背景图片，优点是非常便于控制位置（精灵图也是一种运用场景）</p>
+                    <a href="#sj"><h2>返回标题</h2></a>
+</body>
+</html>

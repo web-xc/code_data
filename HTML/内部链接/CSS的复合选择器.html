@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的复合选择器</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+        }
+        /* 我想要把ol里面的小li选出来改为pink */
+        ol li {
+            color: pink;
+        }
+        ol li a {
+            color: red;
+        }
+        .nav li a {
+            color: yellow;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+        }
+        h1 {
+            background-color: rgb(248, 0, 255,0.6);
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav1>a {
+            color: red; 
+        }
+        /* 可去掉ul或者li都行，只不过还是提倡全写，不易出现问题
+        .nav3 ul li a {
+            color: red;
+        }  */
+        .hot>a {
+            color: red;
+        }
+        .yufa {
+            color: chartreuse;
+        }
+        /* 要求1：请把熊大和熊二改为粉色 */
+         /* div , p {
+            color: pink;
+        }   */
+        /* 要求2：请把熊大和熊二改为粉色 还有 小猪一家改为粉色 */
+        /* div, p, .pig li {
+            color: pink;
+        } */
+        .mulu {
+            color: #551A8B;
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">复合选择器：</div>
+    <p>在CSS中，可以根据选择器的类型把选择器分为基础选择器和复合选择器，复合选择器是建立在基础选择器之上，对基础选择器进行组合形成的。</p>
+    <ul>
+        <li>复合选择器可以更准确、更高效的选择目标元素(标签)</li>
+        <li>复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的</li>
+        <li>常用的复合选择器包括：后代选择器、子选择器、并集选择器、伪类选择器等等...</li>
+    </ul>
+    <!-- 页面目录： -->
+    <p class="mulu">本页面目录：</p>
+    <ui>
+        <a href="#hodai"><li>后代选择器</li></a>
+        <a href="#zi"><li>子选择器</li></a>
+        <a href="#bingji"><li>并集选择器</li></a>
+        <a href="#lx"><li>课后练习</li></a>
+    </ui>
+    <!-- 下面是后代选择器： -->
+    <h1 id="hodai">1️⃣后代选择器(重要)</h1>
+    <p>后代选择器又称为包含选择器，可以选择父元素里面的子元素，其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代</p>
+    <u class="yufa">语法：元素1 元素2 { 样式声明 }</u>
+    <h3>👆上述语法表示选择元素1 里面的所有元素2（后代元素）</h3>
+    <h3>例如：ul li {样式声明} /* 选择ul里面所有的li标签元素 */</h3>
+    <ui>
+        <li>元素1 和元素2 中间用空格隔开</li> <br>
+        <li>元素1 是父子级，元素2 是子级，最终选择的是元素2</li> <br>
+        <li>元素2 可以是儿子,也可以是孙子等，只要是元素1 的后代即可</li> <br>
+        <img src="../编程截图/后代选择器.png" width="900px" height="500px"> <br>
+        <img src="../编程截图/后代选择器1.png" width="900px" height="500px"> <br>
+    </ui>
+    <!-- 下面是案例： -->
+    <h3>下面的小例：</h3>
+    <ol>
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li><a href="#">我是孙子</a></li>
+    </ol> 
+    <ui>
+        <li>我是ul 孩子</li>
+        <li>我是ul 孩子</li>
+        <li>我是ul 孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ui> <br>
+    <ui class="nav">
+        <li>我是ul 孩子</li>
+        <li>我是ul 孩子</li>
+        <li>我是ul 孩子</li>
+        <li><a href="#">不会变化的</a></li>
+    </ui> <br>
+    <!-- 下面是子选择器： -->
+    <h1 id="zi">2️⃣子选择器(重要)</h1>
+    <p>子元素选择器（子选择器）只能选择作为某元素的最近一级子元素。简单理解就是选亲儿子元素</p>
+    <u class="yufa">语法：元素1 > 元素2 {样式声明}</u>
+    <h3>👆上述语法表示选择元素1 里面的所有直接后代（子元素）元素2</h3>
+    <h3>例如：div > p {样式声明} /* 选择 div 里面所有最近一级 p 标签元素 */</h3>
+    <ui>
+        <li>元素 1 和元素 2 中间用大于号隔开</li> <br>
+        <li>元素 1 是父级，元素 2 是子级，最终选择的是元素 2</li> <br>
+        <li>元素 2 必须是亲儿子，其孙子、重孙之类都不归他管，你也可以叫他亲儿子选择器</li> <br>
+    </ui>
+    <!-- 下面是案例: -->
+    <h3>下面的小例：</h3>
+    <div class="nav1">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+    </div>
+    <!-- 下面是课后练习： -->
+    <h1 id="lx">课后练习：</h1>
+    <p>1️⃣请将下面的链接文字修改为红色（后代选择器练习）</p>
+    <div class="nav3">
+        <ui>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">百度</a></li> <br>
+            <img src="../编程截图/后代选择器练习.png" width="400px" height="200px"> <br>
+            <img src="../编程截图/后代选择器练习1.png" width="400px" height="100px"> <br>
+        </ui>
+    </div>
+    <p>2️⃣请将下面的大肘子文字修改为红色（子选择器练习）</p>
+    <div class="hot">
+        <a href="#">大肘子</a>
+        <ui>
+            <li><a href="#">猪头</a></li>
+            <li><a href="#">猪尾巴</a></li>
+            <img src="../编程截图/子选择器练习.png" width="400px" height="200px"> <br>
+            <img src="../编程截图/子选择器练习1.png" width="400px" height="100px"> <br>
+        </ui>
+    </div> <br>
+    <!-- 下面是并集选择器： -->
+    <h1 id="bingji">3️⃣并集选择器（重要）</h1>
+    <p>并集选择器可以选择多组标签，同时为他们定义相同的样式。通常用于集体声明</p>
+    <p>并集选择器是各选择器通过英文逗号（，）连接而成，任何形式的选择器都可以作为并集选择器的一部分</p>
+    <u class="yufa">语法：元素1 ，元素2 {样式声明} </u>
+    <h3>👆上述语法表示选择元素1 和元素2 </h3>
+    <ui>
+        <li>元素1 和元素2 中间用逗号隔开</li> <br>
+        <li>逗号可以理解为和的意思</li> <br>
+        <li>并集选择器通常用于集体声明</li> <br>
+    </ui>
+    <!-- 下面是案例： -->
+    <h3>下面的小例：</h3>
+    <div>熊大</div>
+    <p>熊二</p>
+    <img src="../编程截图/并集选择器.png" width="400px" height="300px"> <br>
+    <span>光头强</span>
+    <ui class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+        <img src="../编程截图/并集选择器1.png" width="400px" height="250px"> <br>
+    </ui>
+    <a href="#sj"><h1>返回标题</h1></a>
+</body>
+</html>

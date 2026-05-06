@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的元素显示模式转换</title>
+    <style>
+                body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+        }
+        .xl {
+            width: 150px;
+            height: 90px;
+            background-color: pink;
+            text-decoration: none;
+            color: red;
+            display: block;
+            /* 把行内元素a 转换为 块元素 */
+        }
+        .kuaiji {
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+            display: inline;
+            /* 把 div 块级元素转换为行内元素 */
+        }
+        .zhuanhuan {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        span {
+            width: 300px;
+            height: 30px;
+            background-color: skyblue;
+            display: inline-block;
+        }
+        .xiazai {
+            color: rgb(238, 255, 0);
+            font-size: 25px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti">CSS的元素显示模式转换</div>
+    <!-- 下面是元素显示模式转换： -->
+    <h2 class="zhuanhuan" id="sj">1️⃣元素显示模式转换:</h2>
+    <p>特殊情况下，我们需要元素模式的转换，简单理解：一个模式的元素需要另外一种模式的特征。比如想要增加链接 a 的触发范围</p>
+    <ui>
+        <li>转换为块元素：display:block;</li>
+        <li>转换为行内元素：display:inline;</li>
+        <li>转换为行内块： display:inline-block;</li>
+    </ui>
+        <!-- 转换为 块元素的小例： -->
+    <h4>下面是小例：</h4>
+    <a href="#" class="xl">小例：转换为块元素</a>
+    <a href="#" class="xl">小例：把行内元素a 转换为 块元素</a> <br>
+    <div class="kuaiji">我是块级元素</div>
+    <div class="kuaiji">把 div 块级元素转换为行内元素</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span> <br>
+    <!-- 一个小工具的使用：(snipaste) -->
+    <h2 class="zhuanhuan">2️⃣一个小工具的使用：(snipaste)</h2>
+    <p>snipaste是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上。</p>
+    <!-- 常用的快捷方式如下： -->
+    <del>常用快捷方式：</del>
+    <ol>
+        <li>F1可以截图，同时测量大小，设置箭头 书写文字等...</li>
+        <li>F3在桌面置顶显示</li>
+        <li>点击图片， alt 可以取色 （按下shift可以切换取色模式）</li>
+        <li>按下 esc 取消图片显示</li>
+    </ol>
+    <a href="https://www.snipaste.com/" class="xiazai" target="blank">snipaste官网</a>
+    <a href="#sj"><h2 class="zhuanhuan">返回标题</h2></a>
+</body>
+</html>

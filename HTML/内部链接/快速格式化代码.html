@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速格式化代码--自动保存且格式化代码</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(0, 38, 255);
+        }
+        body {
+            background-color: rgb(97, 147,221);
+            font-size: 23px;
+            color: rgb(77, 0, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+            color: rgb(0, 0, 0);
+        }
+        .oo {
+            background-color: rgb(248, 0, 255,0.6);
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">快速格式化代码</div>
+    <p>Vscode 快速格式化代码：shift + alt+ f</p>
+    <h4>也可以设置 当我们 保存页面的时候自动格式化代码：</h4>
+    <ol>
+        <li>【文件】---->【首页项】----【设置】</li>
+        <li>搜索emmet.include</li>
+        <li>
+            在settings.json下的【用户】中添加以下语句：
+            "editor.formatOnType":true,
+            "editor.formatOnSave":true
+            只需要设置一次即可，以后都可以自动保存格式化代码
+        </li> <br>
+            <li>第一步：</li>
+            <img src="../编程截图/快速格式化代码.png" width="900px" height="500px">
+            <li>第二步：</li>
+            <img src="../编程截图/快速格式化代码1.png" width="900px" height="500px">
+            <li>第三步：</li>
+            <img src="../编程截图/快速格式化代码2.png" width="900px" height="500px">
+    </ol>
+    <a href="#sj"><h2 class="oo">返回标题</h2></a>
+</body>
+</html>

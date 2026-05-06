@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的元素显示模式</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+        }
+        .xl {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .zhuyi {
+            color: red;
+            font-size: 30px;
+        }
+        .yuansu {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        input {
+            width: 249px;
+            height: 35px;
+        }
+        .biaoge {
+            background-color: rgb(165, 146, 146);
+            color: rgb(8, 8, 8);
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 255, 98);
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">CSS的元素显示模式</div>
+    <!-- 下面是元素显示模式 -->
+    <h1>什么是元素显示模式：</h1>
+    <p>网页的标签非常多，在不同地方会用到不同类型的标签，了解他们的特点可以更好的布局我们的网页</p>
+    <p>元素显示模式就是元素（标签）以什么方式进行显示，比如 div 自己占一行，比如一行可以放多个span</p>
+    <p>HTML元素一般分为“块元素”和“行内元素”两种类型</p>
+            <!-- 下面是本页面目录 -->
+            <p class="mulu">本页面目录：</p>
+            <ui>
+                <a href="#kuai"><li>块元素</li></a>
+                <a href="#hangnei"><li>行内元素</li></a>
+                <a href="#hangneikuai"><li>行内块元素</li></a>
+                <a href="#zj"><li>元素显示模式总结</li></a>
+            </ui>
+    <!-- 下面是块元素 -->
+    <h2 class="yuansu" id="kuai">1️⃣块元素：</h2>
+    <p>常见的块元素有h1~h6、p、div、ui、ol、li等，其中 div 标签是最典型的“块元素”</p>
+    <!-- 块级元素的特点 -->
+    <h2>块级元素的特点：</h2>
+    <p>①比较霸道，自己2独占一行</p>
+    <p>②高度、宽度、外边距以及内边距都可以控制</p>
+    <p>③宽度默认是容器（父级宽度）的100%</p>
+    <p>④是一个容器及盒子，里面可以放行内或者块级元素</p>
+    <!-- 下面是小例： -->
+    <h3>下面是小例：</h3>
+    <div class="xl">比较霸道，自己独占一行</div> 瑟瑟发抖  
+    <!-- 块元素注意的几个点： -->
+    <p class="zhuyi">块元素注意的几个点:</p>
+    <ui>
+        <li>文字类的元素内不能使用块级元素</li> <br>
+        <li> p 标签主要用于存放文字，因此 p 里面不能放块级元素，特别是不能放 div </li> <br>
+        <li>同理，h1~h6 等都是文字类块级标签，里面也不能放其他块级元素</li> <br>
+    </ui>
+    <!-- 下面是行内元素 -->
+    <h2 class="yuansu" id="hangnei">2️⃣行内元素：</h2>
+    <p>常见的行内元素有a、strong、b、em、i、del、s、ins、u、span等，其中 span 标签是最典型的行内元素。有的地方也将行内元素称为“内联元素”</p>
+    <!-- 行内元素的特点 -->
+    <h2>行内元素的特点：</h2>
+    <p>①相邻行内元素在一行上，一行可以显示多个</p>
+    <p>②高、宽直接设置是无效的</p>
+    <p>③默认宽度就是它本身内容的宽度</p>
+    <p>④行内元素只能容纳文本或其他行内元素</p>
+    <!-- 下面是小例： -->
+    <h3>下面是小例：</h3>
+    <span>pink老师你怎么穿着品如的衣服呢！</span> <strong>品如的衣服</strong> <span>pink老师</span> <strong>品如的衣服</strong>
+    <!-- 行内元素注意的几个点： -->
+    <p class="zhuyi">行内元素注意的几个点：</p>
+    <ui>
+        <li>链接里面不能再放链接👇</li> <a href="#">百度 <a href="#">不能这样再放链接</a></a> <br>
+        <li>特殊情况链接 a 里面可以放块级元素，但是给 a 转换一下块级模式最安全</li> <br>
+    </ui>
+    <!-- 下面是行内块元素： -->
+    <h2 class="yuansu" id="hangneikuai">3️⃣行内块元素：</h2>
+    <p>在行内元素中有几个特殊的标签——img、input、td ，它们同时具有块元素和行内元素的特点，有些资料称它们为“行内块元素”</p>
+    <!-- 行内块元素的特点： -->
+    <h2>行内块元素的特点：</h2>
+    <ui>
+        <li>①和相邻行内元素（行内块）在一行上，但是他们之间会有空白缝隙，一行可以显示多个（行内元素特点）</li>
+        <li>②默认宽度就是它本身内容的宽度（行内元素特点）</li>
+        <li>③高度，行高、外边距以及内边距都可以控制（块级元素特点）</li>
+    </ui> <br>
+    <!-- 下面是小例： -->
+    <h3>下面是小例：</h3>
+     <input type="text">
+     <input type="text">
+    <!-- 元素显示模式总结； -->
+    <h2 class="yuansu" id="zj">4️⃣元素显示模式总结：</h2>
+    <table align="center" width="700" height="449" border="1" cellpadding="15" cellspacing="0" class="biaoge"> <br>
+        <thead>
+            <tr>
+                <th>元素模式</th>
+                <th>元素排列</th>
+                <th>设置样式</th>
+                <th>默认宽度</th>
+                <th>包含</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>块级元素</td>
+                <td>一行只能放一个块级元素</td>
+                <td>可以设置宽度高度</td>
+                <td>容器的100%</td>
+                <td>容器级可以包含任何标签</td>
+            </tr>
+            <tr>
+                <td>行内元素</td>
+                <td>一行可以放多个行内元素</td>
+                <td>不可以直接设置宽度、高度</td>
+                <td>它本身内容的宽度</td>
+                <td>容纳文本或则其他行内元素</td>
+            </tr>
+            <tr>
+                <td>行内块元素</td>
+                <td>一行放多个行内块元素</td>
+                <td>可以设置宽度和高度</td>
+                <td>它本身内容的宽度</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#sj"><h1 class="yuansu">返回标题</h1></a> 
+</body>
+</html>

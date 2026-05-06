@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+        <style>
+            p {
+                color: brown;
+                font-size: 50px;
+            }
+            div {
+                  color: chocolate;
+            }
+            .red {
+                   color: red;
+            }
+            .green {
+                     color: green;
+            }
+            .hongse {
+                      width: 100px;
+                      height: 50px;
+                      background-color: red;
+            }
+            .lvse {
+                      width: 100px;
+                      height: 50px;
+                      background-color: green;
+            }
+            .duo {
+                   color: rgb(255, 47, 151);
+            }
+            .font40 {
+                      font-size: 40px;
+            }
+            .box {
+                   width: 100px;
+                   height: 60px;
+                   font-size: 40px;
+            }
+            .hong {
+                    background-color: red;
+            }
+            .lv {
+                  background-color: green;
+            }
+            #red {
+                   color: red;
+            }
+            * {
+                color: rgb(19, 14, 61);
+            }
+            h2 {
+                 font-family: 微软雅黑;
+            }
+            div {
+                  font-family: 'Times New Roman', Times, serif;
+            }
+            body {
+                   font-size: 30px;
+            }
+            /* 标题标签比较特殊，需要单独指定字体大小 */
+            h2 {
+                 font-size: 20px;
+            }
+            bold {
+                   font-weight: 700;
+            }
+            h2 {
+                 font-weight: 500;
+            }
+        </style>
+    </head>
+<body>
+    <!-- 下面是标签选择器 -->
+    <p>段落</p>
+    <div>盒子</div>
+    <div>盒子</div>
+    <div>盒子</div>
+    <!-- 下面是类选择器 -->
+    <!-- 口诀：样式.定义 结构（class）调用一个或多个 -->
+    <ui>
+        <li class="red">冰雨</li>
+        <li class="red">来生缘</li>
+        <li class="green">生僻字</li>
+    </ui>
+    <div class="red">我也想变颜色</div> <br>
+    <!-- 下面是案例 -->
+    <div class="hongse">红色</div>
+    <div class="lvse">绿色</div>
+    <div class="hongse">红色</div> <br>
+    <!-- 多类名的使用 -->
+    <div class="duo font40">多类名</div> <br>
+    <!-- 多类名的使用场景 -->
+    <div class="hong box"><input type="text"></div>
+    <div class="lv box"><input type="password"></div>
+    <div class="hong box">红色</div> <br>
+    <!-- id选择器 -->
+    <!-- 注意，id选择器只能调用一次（样式#定义  结构id调用） -->
+    <div id="red">迈尔克-杰克逊</div> <br>
+    <!-- 通配符选择器，这里把html body div span uid 等等的标签都改成了绿色 -->
+    <div>通配符</div>
+    <span>通配符</span>
+    <ui>
+        <li>通配符</li>
+    </ui> <br>
+    <!-- CSS字体属性之字体系列 -->
+    <h2>pink的秘密</h2>
+    <div>静心 坦然 攻克一个又一个</div>
+    <!-- CSS字体属性之字体大小系列 -->
+    <h2>pink的秘密</h2>
+    <div>静心 坦然 攻克一个又一个</div>
+    <!-- CSS字体属性之字体粗细系列 -->
+    <h2>pink的秘密</h2>
+    <div>静心 坦然 攻克一个又一个</div>
+</body>
+</html>

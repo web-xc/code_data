@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的三大特性</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            -webkit-text-size-adjust: 100%;
+        }
+        h2 {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+            background-attachment: scroll fixed;
+        }
+        .anli {
+            color: rgb(0, 255, 21);
+        }
+        .anli1 {
+            color: pink;
+            font-size: 20px;
+        }
+        .jcx {
+            color: pink;
+            /* font: 12px/24px 'Microsoft YaHei'; */
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+        .jcx , div {
+            /* 子元素继承了父元素 body 的行高 1.5 */
+            /* 这个1.5 就是当前元素文字大小 font-size 的1.5 倍 所以当前 div 的行高就是 21像素 */
+            font-size: 14px;
+        }
+        .jcx , h5 {
+            /* 1.5 *16 =24 当前的行高 */
+            font-size: 16px;
+        }
+        /* li 没有手动指定文字大小 则会继承父亲的 文字大小 body 12px 所有 li 的文字大小为 12px */
+        /* 当前 li 的行高就是 12 * 1.5 = 18  */
+        .biaoge {
+            background-color: rgb(165, 146, 146);
+            color: rgb(8, 8, 8);
+        }
+        .anli2 {
+            color: red;
+            font-size: 20px;
+        }
+        #demo {
+            color: rgb(0, 255, 21)!important;
+            font-size: 25px;
+        }
+        /* 父亲的权重是 100  */
+        #father {
+            color: red;
+        }
+        /* p 继承的权重为 0 */
+        /* 所以以后我们看标签到底执行那个样式，就先看这个标签有没有直接被选出来 */
+        .anli3 {
+            color: pink;
+            font-size: 20px;
+        }
+        /* a 链接是浏览器默认制定了一个样式 蓝色的 有下划线 a {color="blue;"} */
+        a {
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+        }
+        /* li 的权重是 0.0.0.1、 */
+        /* ui li 权重是 0，0，0，1 + 0，0，0，1 =0，0，0，2 */
+        .anli4 {
+            color: red;
+        }
+        /* 复合选择器会有权重叠加的问题 */
+        /* 权重虽然会叠加，但是永远不会有进位 */
+        .anli4 li {
+            color: rgb(0, 255, 0);
+        }
+        /* .anli4 li 权重 0，0，1，0 + 0，0，0，1 =0，0，1，1 */
+        /* .anli4 li {
+            color: pink;
+        } */
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">CSS的三大特性</div>
+    <p>CSS的三个非常重要的三个特性：层叠性、继承性、优先级</p>
+                <!-- 下面是本页面目录 -->
+                <p class="mulu">本页面目录：</p>
+                <ui>
+                    <a href="#cdx"><li>层叠性</li></a>
+                    <a href="#jcx"><li>继承性</li></a>
+                    <a href="#hgjcx"><li>CSS的继承性--行高的继承性</li></a>
+                    <a href="#yxj"><li>优先级</li></a>
+                    <a href="#yxjqzdj"><li>CSS优先级的权重叠加</li></a>
+                </ui>
+    <!-- CSS的层叠性： -->
+    <h2 id="cdx">1️⃣层叠性 :</h2>
+    <p>相同选择器给设置相同的样式，此时一个样式就会覆盖（层叠）另一个冲突的样式，层叠性主要解决样式冲突的问题</p>
+    <div class="anli">长江后浪推前浪，前浪死在沙滩上</div>
+    <h3>层叠性原则：</h3>
+    <ui>
+        <li>样式冲突，遵循的原则是就近原则，哪个样式离结构近，就执行哪个样式</li>
+        <li>样式不冲突，不会层叠</li>
+    </ui>
+    <!-- CSS的继承： -->
+    <h2 id="jcx">2️⃣继承性 :</h2>
+    <p>现实中的继承，我们继承了父亲的姓</p>
+    <p>CSS中的继承：子标签会继承父标签的某些样式，如文本颜色和字号，简单的理解就是：子承父业</p>
+    <ol>
+        <li>恰当地使用继承可以简化代码，降低CSS样式的复杂性</li>
+        <li>子元素可以继承父元素的样式（text-，font-，line- 这些元素开头的可以继承，以及 color 属性）</li>
+        <li>继承性口诀：龙生龙，凤生凤，老鼠生的孩子会打洞/li>
+        </ol>
+    <!-- 下面是CSS的继承案例： -->
+    <div class="anli1">
+        <p>龙生龙，凤生凤，老鼠生的孩子会打洞</p>
+    </div>
+    <!-- CSS的继承性--行高的继承性 -->
+    <h2 id="hgjcx">3️⃣CSS的继承性--行高的继承性：</h2>
+    <ol>
+        <li>行高可以跟单位也可以不跟单位</li>
+        <li>如果子元素没有设置行高，则会继承父元素的行高为1.5</li>
+        <li>此时子元素的行高是 : 当前子元素的文字大小 *1.5</li>
+        <li>body 行高 1.5 这样写法最大的优势就是里面子元素可以根据自己文字大小自动调整行高</li>
+    </ol> <br>
+    <!-- CSS的继承性--行高继承性的案例： -->
+    <div class="jcx">粉红色的回忆</div>
+    <h5 class="jcx">粉红色的回忆</h5>
+    <ui>
+        <li>我没有指定文字大小</li>
+    </ui> <br>
+    <img src="../编程截图/CSS的继承性--行高继承性的案例.png" width="580px" height="390px">
+    <!-- CSS的优先级： -->
+    <h2 id="yxj">4️⃣优先级：</h2>
+    <p>当同一个元素指定多个选择器，就有优先级的产生</p>
+    <ui>
+        <li>选择器相同，则执行层叠性</li>
+        <li>选择器不同，则根据选择器权重执行</li>
+    </ui>
+    <!-- 选择器权重如下表所示： -->
+    <h3>选择器权重如下表所示：</h3>
+    <table width="450" height="149" border="1" cellpadding="15" cellspacing="0" class="biaoge"> <br>
+        <thead>
+            <tr>
+                <th>选择器</th>
+                <th>选择器权重</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>继承 或者 *</td>
+                <td>0，0，0，0</td>
+            </tr>
+            <tr>
+                <td>元素选择器</td>
+                <td>0，0，0，1</td>
+            </tr>
+            <tr>
+                <td>类选择器，伪类选择器</td>
+                <td>0，0，1，0</td>
+            </tr>
+            <tr>
+                <td>id 选择器</td>
+                <td>0，1，0，0</td>
+            </tr>
+            <tr>
+                <td>行内样式 style =""</td>
+                <td>1，0，0，0</td>
+            </tr>
+            <tr>
+                <td>!important 重要的</td>
+                <td> 无穷大</td>
+            </tr>
+    </table> <br>
+    <div class="anli2" id="demo" style="color: green">你笑起来真好看</div> <br>
+    <img src="../编程截图/CSS的优先级.png" width="330px" height="190px">
+    <!-- CSS的优先级注意点： -->
+    <h1>优先级注意点：</h1>
+    <ol>
+        <li>权重是有4组数字组成，但是不会有进位</li>
+        <li>可以理解为类选择器永远大于元素选择器，id选择器永远大于类选择器，以此类推</li>
+        <li>等级判断从左向右，如果某一位数值系相同，则判断下一位数值</li>
+        <li>可以简单记忆法：通配符和继承权重为 0 ，标签选择器为 1 ，类（伪类选择器）为 10 ，id选择器 100 ，行内样式表为 1000 ，!important无穷大</li>
+        <li>继承的权重是 0 ，如果该元素没有直接选中，不管父元素权重多高，子元素得到的权重都是 0</li>
+    </ol>
+    <div id="father">
+        <h5 class="anli3">你还是很好看</h5>
+    </div>
+    <a href="#">我是单独的样式</a> <br>
+    <img src="../编程截图/优先级注意点.png" width="580px" height="280px">
+    <!-- CSS优先级的权重叠加： -->
+    <h2 id="yxjqzdj">5️⃣CSS优先级的权重叠加：</h2>
+    <p>权重叠加：如果是复合选择器，则会有权重叠加，需要计算权重</p>
+    <ol>
+        <li>div ui li ---> 0, 0, 0, 3</li>
+        <li>.nav ui li---> 0, 0, 1, 2</li>
+        <li>a: hover---> 0, 0, 1, 1</li>
+        <li>.nav a---> 0, 0, 1, 1</li>
+    </ol>
+    <ui class="anli4">
+        <li>大猪蹄子</li>
+        <li>大子</li>
+        <li>猪尾巴</li>
+    </ui>
+    <img src="../编程截图/CSS优先级的权重叠加.png" width="570px" height="290px">
+    <h2>🌈权重的两个练习题：<a href="CSS三大特性--权重的两个练习题.html" target="blank">点击查看</a></h2>
+    <a href="#sj"><h2>返回标题</h2></a>
+</body>
+</html>

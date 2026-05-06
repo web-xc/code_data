@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <mata name="viewport" contet="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS语法规范</title>
+        <!-- CSS主要使用场景就是美化网页，布局的 -->   
+        <style>
+            /* 选择器{样式} */
+            /* 给谁改样式{改什么样式} */
+            /* 属性之间冒号后面保留一个空格 */
+            p {
+                color: red;
+            /* 修改了文字大小为20像素 */
+                font-size: 20px;
+            }
+            /* 标签选择器:写上标签名,只能选择全部的当前标签 */
+            p {
+                color: green;
+                font-family:'微软雅黑'
+            }
+            div {
+                color: pink;
+            }
+            .a {
+                color: red;
+            }
+            .star-sing {
+                color: green;
+                /* 长名称或词组可以使用中横线来为选择器命名 [不能用数字,中文命名] 尽量用英文 */
+            }
+            .red {
+                /* 背景颜色 */
+                background-color: red;
+            }
+            .green {
+                background-color: green;
+            }
+            .box {
+                /* 统一修改写法 */
+                width: 300px;
+                height: 200px;
+                font-size: 26px;
+            }
+            .b {
+                color: red;
+            }
+            .font35 {
+                font-size: 35px;
+            }
+            #pink {
+                /* id选择器口诀:样式#定义; 结构id调用,只能调用一次,别人切勿使用 */
+                color: pink;
+            }
+            * {
+                /* *这里把html body div span li等等标签都改成了红色 */
+                color: red;
+            }
+            h2 {
+                font-family: '微软雅黑';
+            }
+            p {
+                /* font-family: 'Microsoft YaHei',Arial, Helvetica, sans-serif; */
+                font-family: 'Times New Roman', Times, serif;
+            }
+          /* CSS文字属性之文字大小 */
+            body {
+                   font-size: 30px;
+              }
+            /* 标题标签比较特殊,需要单独指定文字大小 */
+            h2 {
+                   font-size: 40px;
+              }
+            .bold {
+                   font-weight: 100;
+              }
+            h2 {
+                   font-weight: 50;
+              }
+            p {
+                   font-style: italic;
+              }
+            h2 {
+                   font-style: normal;
+              }
+        </style>
+    </head>
+<body>
+    <!-- 下面这个叫标签选择器 -->
+    <p>标签选择器</p>
+    <p>标签选择器</p>
+    <p>标签选择器</p>
+    <p>标签选择器</p>
+    <div>标签选择器</div>
+    <div>标签选择器</div>
+    <div>标签选择器</div> <br>
+    <!--下面这个叫类选择器,单独选一个标签或几个标签,可以使用类选择器 用class来调用-->
+    <!--类选择器口诀:样式点定义 结构类(class)调用 一个或多个 (开发最常用)-->
+    <ui>
+        <li class="a">类选择器</li>
+        <li class="a">类选择器</li>
+        <li class="star-sing">类选择器</li>
+    </ui>
+    <div class="a">我也想变红色</div> <br>
+    <!--下面这个是案例-->
+    <div class="red box">类选择器和统一修改宽高、文字大小的案例</div>
+    <div class="green box">类选择器和统一修改宽高、文字大小的案例</div>
+    <div class="red box">类选择器和统一修改宽高、文字大小的案例</div> <br>
+    <!--下面是多类名语法规范-->
+    <div class="b font35">多类名</div> <br>
+    <!--下面是id选择器语法规范-->
+    <div id="pink">id选择器</div> <br>
+    <!--下面是通配符选择器语法规范-->
+    <div>通配符选择器通配符选择器</div>
+    <span>通配符选择器</span>
+    <ui>
+        <li>通配符选择器</li>
+    </ui>
+    <!--family设置字体系列语法规范-->
+    <h2>pink的秘密</h2>
+    <p>那一抹众人中最漂亮的颜色,</p>
+    <p>优雅,淡然,又那么心中清澈.</p>
+    <p>前端总是伴随着困难和犯错,</p>
+    <p>静心,坦然,攻克一个又一个.</p>
+    <p>拼死也要克服它,</p>
+    <p>这是pink的秘密也是老师最终的嘱托.</p>
+    <p>这个是family设置字体语法</p>
+</body> 
+</html>

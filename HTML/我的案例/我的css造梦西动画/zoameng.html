@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        .box {
+            width:760px;
+            height:240px;
+            background-color:transparent;
+            margin:300px auto;
+        }
+        .west {
+            width: 190px;
+            height: 240px;
+            background-color: transparent;
+            float: left;
+            background-position-y: center;
+            background-repeat: no-repeat;
+        }
+        .west01 {
+            background-image: url(img/west_01.png);
+            animation: swk 1s steps(8) infinite;
+        }
+        .west02 {
+            background-image: url(img/west_02.png);
+            animation: swk 1s steps(8) infinite;
+        }
+        .west03 {
+            background-image: url(img/west_03.png);
+            animation: ts 1s steps(8) infinite;
+        }
+        .west04 {
+            background-image: url(img/west_04.png);
+            animation: ss 1s steps(8) infinite;
+        }
+        body {
+            background-image: url(img/bac.webp);
+        }
+        @keyframes swk {
+            0% {
+                background-position-x: 0px;
+            }
+          100% {
+            background-position-x: -1600px;
+            }
+        }
+        @keyframes ts {
+            0% {
+                background-position-x: 0px;
+            }
+            100% {
+                background-position-x: -1360px;
+            }
+        }
+        @keyframes ss {
+            0% {                
+                background-position-x: -0px;
+            }
+            100% {
+                background-position-x: -1680px;
+            }
+        }
+    </style>
+ </head>
+ <body>
+       <div class="box">
+           <div class="west west01"></div>
+           <div class="west west02"></div>
+           <div class="west west03"></div>
+           <div class="west west04"></div>
+       </div>
+ </body>
+</html>

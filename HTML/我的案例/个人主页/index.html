@@ -1,0 +1,84 @@
+<html lang="zh-CN" id="bgimg" style="background-image: url(&quot;http://pic.netbian.com/uploads/allimg/190824/212516-15666531161ade.jpg&quot;);">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width"> 
+  <title>小城故事主页</title> 
+  <meta name="description" content="小城故事引导页"> 
+  <meta name="keywords" content="小城故事引导页"> 
+  <link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/buttons.css"> 
+  <link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/showcase.css"> 
+  <link type="text/css" rel="stylesheet" href="style.css"> 
+  <meta name="referrer" content="no-referrer"> 
+ </head> 
+ <body id="v1"> 
+  <div style="text-align:center;clear:both"> 
+  </div> 
+  <div class="tooltips"> 
+   <span> <iframe src="https://music.163.com/outchain/player?type=0&amp;id=3052064923&amp;auto=1&amp;height=280" width="330" height="300" frameborder="no" marginwidth="0" marginheight="0"></iframe> </span> 
+  </div> 
+  <script src="js/jq.js"></script> 
+  <div id="top"> 
+   <main id="top_main"> 
+    <div id="top_logo"> 
+     <img src="src/tx2.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"> 
+    </div> 
+    <div id="top_title"> 
+     <img id="top_title01" alt="" src="src/toptitle01.png"> 
+     <br id="v2" class="top_hr_style01"> 
+    </div> 
+    <br id="v3"> 
+    <br id="v4"> 
+    <div id="v5" class="showcase-examples l-over l-center"> 
+     <a id="v6" href="weibo.com" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+     <a id="v7" href="这里填网址" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+     <a id="v8" href="这里填网址" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+     <a id="v9" href="这里填网址" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+     <a id="v10" href="这里填网址" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+     <a id="v11" href="这里填网址" title="小城故事" class="button button-rounded button-plain button-small-caps button-border" target="_blank">小城故事</a> 
+    </div> 
+   </main> 
+  </div> 
+  <footer id="top_footer"> 
+   <span id="top_copyright"> 
+    <hr id="v12" class="top_hr_style02"> (°ˊДˋ°)つ友情链接：<a id="v13" href="这里填网址">小城故事</a> 
+    <hr id="v14" class="top_hr_style02"> <a id="v15" href="这里填网址">小城故事</a> copyright © 2021 All Rights Reserved. <a id="v16" href=""></a> </span> 
+  </footer> eserved. 
+  <a href=""></a> 
+  <script>
+	function mouseOver(){
+		document.getElementById("mainimg").src="src/tx.png";//鼠标悬浮时的旋转图标
+	}
+	function mouseOut()
+	{
+		document.getElementById('mainimg').src ="src/tx2.png"//默认的旋转图标
+	}
+</script> 
+  <script type="text/javascript">
+	function change(){
+		var bodyBgs = [];
+bodyBgs[1] = "http://img.netbian.com/file/2019/1016/0e323068cb10e3baacc930b3482d9754.jpg";
+bodyBgs[2] = "http://img.netbian.com/file/2019/1016/0e323068cb10e3baacc930b3482d9754.jpg";
+bodyBgs[3] = "http://img.netbian.com/file/2019/1016/0e323068cb10e3baacc930b3482d9754.jpg";
+bodyBgs[4] = "http://img.netbian.com/file/2019/0824/fe28123a86549be48bc00d639da77c60.jpg";
+bodyBgs[5] = "http://img.netbian.com/file/2019/0824/fe28123a86549be48bc00d639da77c60.jpg";
+bodyBgs[6] = "http://img.netbian.com/file/2019/0824/fe28123a86549be48bc00d639da77c60.jpg";
+bodyBgs[7] = "http://pic.netbian.com/uploads/allimg/190824/212516-15666531161ade.jpg";
+bodyBgs[8] = "http://pic.netbian.com/uploads/allimg/190824/212516-15666531161ade.jpg";
+bodyBgs[9] = "http://pic.netbian.com/uploads/allimg/190824/212516-15666531161ade.jpg";
+bodyBgs[10] = "http://pic.netbian.com/uploads/allimg/190614/221508-15605217086e6f.jpg";
+bodyBgs[11] = "http://pic.netbian.com/uploads/allimg/190614/221508-15605217086e6f.jpg";
+bodyBgs[12] = "http://pic.netbian.com/uploads/allimg/190614/221508-15605217086e6f.jpg";
+		var randomBgIndex = Math.round( Math.random() * 12 );
+		var img1= document.getElementById('bgimg');
+		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
+	        window.setTimeout(function(){change()},10000);
+	}
+	change();
+</script> 
+  <script type="text/javascript" src="src/snow.min.js"></script> 
+  <script type="text/javascript">
+createSnow('src/', 60);
+</script>  
+ </body>
+</html>

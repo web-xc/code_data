@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的元素显示模式--小练习</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+        }
+        h2 {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        /* 1.把 a 转换为块级元素  */
+        a {
+            display: block;
+            width: 230px;
+            height: 40px;
+            background-color: #55585a;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            text-indent: 2em;
+            /* 下面代码——单行文字垂直居中的代码 */
+            line-height: 40px;  
+        }
+        /* 2. 鼠标经过链接变换背景颜色 */
+        a:hover {
+            background-color: #ff6700;
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">案例：简洁版小米侧边栏</div>
+    <h2>1️⃣案例的核心思路分为两步 :</h2>
+    <ol>
+        <li>把链接 a 转换为块级元素，这样链接就可以单独占一行，并且有宽度和高度</li>
+        <li>鼠标经过 a 给链接设置背景颜色</li>
+    </ol>
+    <!-- 案例： -->
+    <a href="#">手机 电话</a>
+    <a href="#">电视 盒子</a>
+    <a href="#">笔记本 平板</a>
+    <a href="#">出行 穿戴</a>
+    <a href="#">智能 路由器</a>
+    <a href="#">健康 儿童</a>
+    <a href="#">耳机 音响</a> <br>
+    <img src="../编程截图/小米简洁侧边栏.png" width="550px" height="400px">
+    <!-- 文字垂直居中的技巧 -->
+    <h2>2️⃣一个小技巧：单行文字垂直居中的代码</h2>
+    <ol>
+        <li>CSS没有给我们提供文字垂直居中的代码，这里我们可以使用一个小技巧来实现👇</li> <br>
+        <li>解决方案：让文字的行高等于盒子的高度，就可以让文字在当前盒子内垂直居中</li>
+    </ol>
+    <h2>3️⃣单行文字垂直居中原理 ：</h2>
+    <img src="../编程截图/单行文字垂直居中原理.png" alt="单行文字垂直居中原理" width="900px" height="500px">
+    <a href="#sj"><h1>返回标题</h1></a>
+</body>
+</html>

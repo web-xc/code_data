@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <style>
+        div {
+             color: #888888;
+             font-size: 10px;
+             text-align: center;
+        }
+        ul {
+             color: rgb(0, 0, 0);
+             font-size: 25px;
+             font-weight: 500;
+             text-align: left;
+             text-indent: 2em;
+             line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="text-align: center; color: #666;">我的网页笔记本-表格标签</h1>
+   <div>写于2021-6-18-下午-星期五</div> <br>
+   <ul>
+       <li>表头位于第一行第一列里面的文字加粗居中显示th table head的缩写</li>
+       <li>表格属性</li>
+       <li>对齐align属性值:left  center  right（左  中右）</li>
+       <li>‌表格边框border  1或""表示没有 </li>
+       <li>单元边与内容之间的空白默认为1 cellpadding</li>
+       <li>单元格之间的空白默认为2   cellspacing</li>
+       <li>‌表格宽度 高度 width height</li>
+       <li>第一行是th表头单元格</li>
+       <li>第二行是td普通单元格</li>
+       <li>
+        table>（表格标签）
+            tr> （表格中的行必须在table>里面）
+         td>  （单元格文字</td>表格的单元格子必须在tr里面>）
+         /tr>
+         /table>
+       </li>
+       <li>单元格里面可以放任何元素 文字链接图片等都行</li>
+       <li>
+        书写格式:
+        table align="center" width="500"
+        height="249" border="1"cellpadding="0" cellspacing="0">
+       </li>
+       <li>‌表格结构标签:更好表示语义，将表格分割成表格头部和表格两大部分，用thead>内必须有tr>一般在第一行 头部区域   和tbody>用于放数据本体 主体区域</li>
+       <li>
+        合并单元格:
+        跨行合并:rowspan="合并单元格的数量"
+        跨列合并:colspan="合并单元格的数量"
+       </li>
+       <li>
+        合并单元格三步曲：
+        1.先确定是跨行还是跨列合并。
+        2.找到目标单元格.写上合并方式=合并的单元格数量。比如：tdcolspan=“2”> /td>。
+        3.删除多余的单元格。
+       </li>‌
+   </ul>
+</body>
+</html>

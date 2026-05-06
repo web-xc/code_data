@@ -1,0 +1,115 @@
+<!DOCTYPE html><!--声明-->
+<html>
+	<head><!--头部-->
+		<meta charset="utf-8" /><!--防止页面乱码-->
+		<title>梦幻西游动画</title><!--网页标题-->
+		<style>
+			/*CSS代码 装饰 装修公司 1 找到标签 2 对标签装修*/
+			.box{
+				/*宽*/
+				width: 760px;
+				/*高*/
+				height: 240px;
+				/*背景颜色*/
+				/*background-color: green;*/
+				/*外边距:上下 左右(自动居中)*/
+				margin: 300px auto;
+			}
+			.west{
+				/*宽*/
+				width: 190px;
+				/*高*/
+				height: 240px;
+				/*背景颜色*/
+				/*background-color: pink;*/
+				/*竖排变横排*/
+				float: left;
+				/*背景图片垂直居中*/
+				background-position-y: center;
+				/*取消背景图片重复*/
+				background-repeat: no-repeat;
+			}
+			.west01{
+				/*背景图片*/
+				background-image: url(img/west_01.png);
+				/*播放动画:动画名称 时间 脚步(8) 次数(循环)*/
+				animation: swk 1s steps(8) infinite;
+			}
+			.west02{
+				/*背景图片*/
+				background-image: url(img/west_02.png);
+				/*播放动画:动画名称 时间 脚步(8) 次数(循环)*/
+				animation: swk 1s steps(8) infinite;
+			}
+			.west03{
+				/*背景图片*/
+				background-image: url(img/west_03.png);
+				/*播放动画:动画名称 时间 脚步(8) 次数(循环)*/
+				animation: ts 1s steps(8) infinite;
+			}
+			.west04{
+				/*背景图片*/
+				background-image: url(img/west_04.png);
+				/*播放动画:动画名称 时间 脚步(8) 次数(循环)*/
+				animation: ss 1s steps(8) infinite;
+			}
+			body{
+				background-image: url(img/bac.webp);
+			}
+			/*CSS3动画 关键帧*/
+			@keyframes swk{
+				/*动画的开始*/
+				0%{
+					background-position-x: 0px;
+				}
+				/*动画的结束*/
+				100%{
+					background-position-x: -1600px;
+				}
+			}
+			/*CSS3动画 关键帧*/
+			@keyframes ts{
+				/*动画的开始*/
+				0%{
+					background-position-x: 0px;
+				}
+				/*动画的结束*/
+				100%{
+					background-position-x: -1360px;
+				}
+			}
+			/*CSS3动画 关键帧*/
+			@keyframes ss{
+				/*动画的开始*/
+				0%{
+					background-position-x: 0px;
+				}
+				/*动画的结束*/
+				100%{
+					background-position-x: -1680px;
+				}
+			}
+		</style>
+	</head>
+	<body><!--身体  正文-->
+		<!--盒子 矩形区域 长方形
+			命名规范:英文字母 见名之意
+			大小(高宽)
+		-->
+		<div class="box">
+			<div class="west west01"></div>
+			<div class="west west02"></div>
+			<div class="west west03"></div>
+			<div class="west west04"></div>
+		</div>
+		
+		
+	</body>
+</html>
+<!--代码注释
+	1 实现静态页面 V
+		a 写一个大盒子装四个人物  V
+		b 四个人物分别用四个盒子装起来 V 并且设置背景图片 V
+		c 设置身体的背景图片为假山的照片 V
+	2 让人物开始走动 
+-->

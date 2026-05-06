@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS--背景图像固定(背景附着)</title>
+    <style>
+        body {
+            color: rgb(169 0 255);
+            font-size: 20px;
+            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            /* background-image: url(/编程截图/CSS背景位置-混合单位案例2.jpg); */
+            /* background-repeat: no-repeat; */
+            /* background-position: center top;  */
+            /* 把背景图片固定住 */
+            /* background-attachment: fixed; */
+            background: url(../编程截图/CSS背景位置-混合单位案例2.jpg) no-repeat fixed center top;
+            /* 上条代码按以下顺序简写：背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置 */
+            /* 这里没有设置背景颜色 */
+        }
+        h2 {
+            background-color: rgb(116 0 255 / 32%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+       <!-- CSS的背景--背景图像固定（背景附着） -->
+       <h2>🌈背景图像固定（背景附着）:</h2>
+       <p>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动</p>
+       <p>background-attachment 后期可以制作视差滚动的效果</p>
+       <img src="../编程截图/CSS背景图像固定-背景附着代码.png" width="285px" height="110px">
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+    <p>天王盖地虎</p>
+</body>
+</html>

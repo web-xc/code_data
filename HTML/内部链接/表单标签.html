@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <style>
+        div {
+             color: #888888;
+             font-size: 10px;
+             text-align: center;
+        }
+        ul {
+             color: rgb(0, 0, 0);
+             font-size: 25px;
+             font-weight: 500;
+             text-align: left;
+             text-indent: 2em;
+             line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="text-align: center; color: #666;">我的网页笔记本-表单标签</h1>
+   <div>写于2021-6-18-下午-星期五</div> <br>
+   <ul>
+       <li>‌一个完整的表单通常由单表域、表单控件（也称表单元素）、提示信息3个部分构成</li>
+       <li>form>定义表单域，以实现用户信息收集和传递，form>会把信息提交给服务器</li>
+       <li>form action="地址" method="提交方式" name="表单域名称"></li>
+       <li>input>包含一个type属性，不同的type属性值输入字段拥有多种形式，格式</li>
+       <li>input type="属性值/">，input是单标签</li>
+       <li>‌type属性值可以让input设置不同的属性值用来指定不同的控件类型 见①</li>
+       <li>‌name定义input元素的名称</li>
+       <li>‌value规定input元素的值</li>
+       <li>checked进入页面直接被选中，默认选中某个表单元素</li>
+       <li>‌maxlength设置字段可以输入的字数，一般较少使用</li>
+       <li>‌name和value都有属性值，给后台人员看的</li>
+       <li>‌name表单元素要求单选按钮和复选框要有相同的name值</li>
+       <li>name:当前input的名字，页面中表单很多，name的主要作用就是用于区别不同的表单</li>
+       <li>用户名: input type="text" value="请输入用户名" name="username"/></li>
+       <li>‌name属性后面的值是自定义的</li>
+       <li>radio或者checkbox如果是一组，我们必须给他命名相同名字</li>
+       <li> input type="radio"name="sex"/>男</li>
+       <li> input type="radio"name="sex"/>女</li>
+       <li> input type="radio"name="sex" value="男" checked="checked"/>男</li>
+       <li> input type="text" value="请输入用户名"> ①</li>
+       <li>‌ label>为input元素定义标注，当点击 label>的文本时，浏览器自动将光标选择对应的表单元素上</li>
+       <li> label for="sex">男 /label></li>
+       <li> input type="radio" name="sex" id="sex"/></li>
+       <li>‌ label>标签的for属性应当与相关元素的id属性相同</li>
+       <li>‌页面中，多个选项让用户选择，并想要节约空间时，我们可以使用 select>标签定义下拉列表  语法</li>
+       <li> select>
+         option>选项1 /option>
+        option>选项2 /option>
+       /select>
+       </li>
+       <li>‌ select>中至少包含</li>
+       <li>‌在 option>中定义 select="selected">时，当前项即为默认选中项</li>
+       <li>通过 textarea>标签可实现多行文本输入框</li>    
+       <li>cols="每行的字数"</li>    ‌
+       <li>‌rows="显示的行数" 《实际开发不会使用》</li>
+       <li>‌语法:
+           textarea rows="3" cols="20"> 文本内容 /textarea>
+       </li>
+       <li>查阅文档:<a href="https://www.w3school.com.cn/" target="_blank">w3school</a>  
+                    <a href="http://developer.mozilla.org/zh-CN/" target="_blank">MDN</a> 
+                    <a href="http://www.baidu.com" target="_blank">百度</a>
+       </li>
+   </ul>
+</body>
+</html>

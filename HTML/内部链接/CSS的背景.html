@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的背景</title>
+    <style>
+        body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            -webkit-text-size-adjust: 100%;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 45px;
+        }
+        h2 {
+            background-color: rgb(201 97 204 / 81%);
+            color: white;
+        }
+        .biaoge {
+            background-color: rgb(165, 146, 146);
+            color: rgb(8, 8, 8);
+            width: 20opx;
+            height: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 255, 98);
+            text-decoration: none;
+        }
+        .anli {
+            width: 85px;
+            height: 30px;
+            background-color: pink;
+            /* background-color: transparent; 透明的 清澈的 */
+        }
+        .anli2 {
+            width: 200px;
+            height: 109px;
+            /* 不要落下 url() */
+            background-image: url(../编程截图/背景图片案例.png);
+        }
+        .anli3 {
+            width: 300px;
+            height: 80px;
+            background-image: url(../编程截图/背景图片案例.png);
+            /* 1.背景图片不平铺 */
+            background-repeat: no-repeat;
+            /* 2.默认的情况下，背景图片是平铺的 */
+            /* background-repeat: repeat; */
+            /* 3.沿着 x 抽平铺 */
+            /* background-repeat: repeat-x; */
+            /* 4.沿着 y 抽平铺 */
+            /* background-repeat: repeat-y; */
+            background-color: rgb(71 47 184);
+            /* 页面元素既可以添加背景颜色也可以添加背景图片，只不过背景图片灰压住背景颜色 */
+        }
+        .anli4 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(71 47 184);
+            background-image: url(../编程截图/背景图片案例.png);
+            background-repeat: no-repeat;
+            /* background-position: 方位名词; */
+            /* background-position: center top; */
+            /* background-position: right center; */
+            /* 如果是方位名词 right center 和 center right 效果是等价的 跟顺序没有关系 */
+            /* background-position: center right; */
+            /* 此时 水平一定是靠右侧对齐 第二个参数省略 y 轴是 垂直居中显示的 */
+            /* background-position: right; */
+            /* 此时 第一个参数一定是 top y轴 顶部对齐  第二个参数省略 y 轴是 垂直居中显示的 */
+            background-position: top;
+
+        }
+        .anli5 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(71 47 184);
+            background-image: url(../编程截图/背景图片案例.png);
+            background-repeat: no-repeat;
+            /* 20px 50px; x 轴一定是20  y 轴一定是50  */
+            /* background-position: 20px 50px; */
+            /* background-position: 50px 20px; */
+            background-position: 20px;
+        }
+        .anli6 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(71 47 184);
+            background-image: url(../编程截图/背景图片案例.png);
+            background-repeat: no-repeat;
+            /* 20px center 一定是x轴为20px   y是（center）等价于（background-position: 20px）*/
+            /* background-position: 20px center; */
+            /* 水平是居中对齐 垂直是 20px */
+            background-position: center 20px;   
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti" id="sj">CSS的背景</div>
+    <p>通过CSS背景属性，可以给页面元素添加背景样式</p>
+    <p>背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等...</p>
+                <!-- 下面是本页面目录 -->
+                <p>本页面目录：</p>
+                <ui>
+                    <a href="#ys"><li>背景颜色</li></a>
+                    <a href="#tp"><li>背景图片</li></a>
+                    <a href="#pp"><li>背景平铺</li></a>
+                    <a href="#wz"><li>背景图片位置</li></a>
+                    <a href="#jq"><li>背景位置--精确单位</li></a>
+                    <a href="#hz"><li>背景位置--混合单位</li></a>
+                </ui>
+     <!-- 背景颜色： -->
+    <h2 id="ys">1️⃣背景颜色：</h2>
+    <p>background-color 属性定义了元素的背景颜色↙</p>
+    <img src="../编程截图/CSS背景颜色代码.png" width="250px" height="100px">
+    <p>一般情况下元素背景颜色默认值是 transparent (透明)，我们也可以手动指定背景颜色为透明色</p>
+    <!-- 案例： -->
+    <div class="anli">div盒子</div>
+    <!-- 背景图片： -->
+    <h2 id="tp">2️⃣背景图片:</h2>
+    <p>background-image 属性描述了元素的背景图像，实际开发常见于logo或者一些装饰性的小图片或者是超大的背景图片，优点是非常便于控制位置，（精灵图也是一种运用场景）↙</p>
+    <img src="../编程截图/CSS背景图片代码.png" width="275px" height="100px">
+    <!-- 下面是背景图片总结表格； -->
+    <table border="1" cellpadding="15" cellspacing="0" class="biaoge"> <br>
+        <tr>
+            <th>参数值</th>
+            <th>作用</th>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>无背景图(默认的)</td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>使用绝对或相对地址指定背景图像</td>
+        </tr>
+    </table>
+    <!-- 下面是案例： -->
+    <h3>下面是背景图片案例 :</h3>
+    <div class="anli2"></div>
+    <!-- 背景平铺： -->
+    <h2 id="pp">3️⃣背景平铺:</h2>
+    <p>如果需要在HTML页面上对背景图像进行平铺，可以使用 background-repeat 属性↙</p>
+    <img src="../编程截图/CSS背景平铺代码.png" width="380px" height="100px">
+    <!-- 下面是案例： -->
+    <h3>下面是背景平铺案例 :</h3>
+    <div class="anli3"></div>
+    <p>🔜页面元素既可以添加背景颜色也可以添加背景图片，只不过背景图片灰压住背景颜色</p>
+        <!-- 下面是背景平铺总结表格； -->
+        <table border="1" cellpadding="15" cellspacing="0" class="biaoge">
+            <tr>
+                <th>参数值</th>
+                <th>作用</th>
+            </tr>
+            <tr>
+                <td>repeat</td>
+                <td>背景图像在纵向和横向上平铺(默认的)</td>
+            </tr>
+            <tr>
+                <td>no-repeat</td>
+                <td>背景图像不平铺</td>
+            </tr>
+            <tr>
+                <td>repeat-x</td>
+                <td>背景图像在横向上平铺</td>
+            </tr>
+            <tr>
+                <td>repeat-y</td>
+                <td>背景图像在纵向上平铺</td>
+            </tr>
+        </table>
+        <!-- 背景图片位置: -->
+        <h2 id="wz">4️⃣背景图片位置:</h2>
+        <p>利用 background-position 属性可以改变图片在背景中的位置</p>
+        <img src="../编程截图/CSS背景图片位置代码.png" width="280px" height="100px">
+        <p>👆参数代表的意思是：x 坐标和 y 坐标，可以使用方位名词或者精确单位</p>
+                <!-- 下面是背景图片位置总结表格； -->
+                <table border="1" cellpadding="15" cellspacing="0" class="biaoge">
+                    <tr>
+                        <th>参数值</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>length</td>
+                        <td>百分数|由浮点数字和单位标识符组成的长度值</td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>top | center | left | center | right 方位名词</td>
+                    </tr>
+                </table>
+                <!-- 表格总结的小案例： -->
+                <p>1.参数是方位名词</p>
+        <ui>
+            <li>如果指定的两个值都是方位名词，则两个值前后顺序无关，比如 left top 和top left 效果一致</li> <br>
+            <li>如果指定了一个方位名词，另一个值省略，则第二个值默认居中对齐</li> <br>
+        </ui>
+        <div class="anli4"></div>👇 <br>
+        <img src="../编程截图/CSS背景图片位置.png" width="750px" height="440px">
+            <!-- 下面是背景位置--精确单位： -->
+    <h2 id="jq">5️⃣背景位置--精确单位:</h2>
+    <ol>
+        <li>参数是精确单位</li>
+        <li>如果参数值是精确坐标，那么第一个肯定是 x 坐标，第二个一定是 y 坐标</li>
+        <li>如果只指定一个数值，那该数值一定是 x 坐标，另一个默认垂直居中</li>
+        
+    </ol>
+    <div class="anli5"></div>
+    <img src="../编程截图/背景图片案例代码.png" width="500px" height="250px">
+    <!-- 下面是背景位置--混合单位: -->
+    <h2 id="hz">6️⃣背景位置--混合单位:</h2>
+    <ol>
+        <li>参数是混合单位</li>
+        <li>如果指定的两个值是精确单位和方位名词混合使用，则第一个值是 x 坐标，第二个值是 y 坐标</li>
+    </ol>
+    <h3>混合单位：<a href="背景位置--混合单位.html" target="_blank" >点击查看</a></h3>
+    <div class="anli6"></div>
+    <div class="anli6"><img src="../编程截图/背景图片案例代码2.png" width="750px" height="300px"></div>
+    <a href="#sj"><h2>返回标题</h2></a>
+</body>
+</html>

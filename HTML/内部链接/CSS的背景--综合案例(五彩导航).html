@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的背景--综合案例</title>
+    <style>
+           body {
+            background-color: rgb(97, 147, 221);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            -webkit-text-size-adjust: 100%;
+        }
+        .biaoti {
+            background-color: rgb(199, 196, 40);
+            text-align: center;
+            height: 100px;
+            font-size: 35px;
+        }
+        .lx {
+            color: rgb(9, 255, 0);
+        }
+        .daohang {
+            color: rgb(0, 255, 0);
+        }
+        .dh a {
+            display: inline-block;
+            width: 120px;
+            height: 58px;
+            background-color: rgb(255, 192, 203);
+            text-align: center;
+            line-height: 48px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .dh .bg1 {
+            background: url(../编程截图/bg1.png) no-repeat;
+        }
+        .dh .bg1:hover {
+            background-image: url(../编程截图/bg11.png);
+        }
+        .dh .bg2 {
+            background: url(../编程截图/bg2.png) no-repeat;
+        }
+        .dh .bg2:hover {
+            background-image: url(../编程截图/bg22.png);
+        }
+        .dh .bg3 {
+            background: url(../编程截图/bg3.png) no-repeat;
+        }
+        .dh .bg3:hover {
+            background-image: url(../编程截图/bg3.jpg);
+        }
+        .dh .bg4 {
+            background: url(../编程截图/bg4.png) no-repeat;
+        }
+        .dh .bg4:hover {
+            background-image: url(../编程截图/bg11.png);
+        }
+        .dh .bg5 {
+            background: url(../编程截图/bg5.png) no-repeat;
+        }
+        .dh .bg5:hover {
+            background-image: url(../编程截图/bg2.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="biaoti">CSS的背景--综合案例--五彩导航</div>
+    <p class="lx">练习价值:</p> 
+    <ol>
+        <li>链接属于行内元素，但是此时需要宽度和高度，因此需要模式转换</li>
+        <li>里面文字需要水平居中和垂直居中，因此需要单行文字垂直居中代码</li>
+        <li>链接里面需要设置背景图片，因此需要用到背景的相关属性设置</li>
+        <li>鼠标经过变化背景图片，因此需要用到链接伪类选择器</li>
+    </ol>
+    <!-- 下面是五彩导航： -->
+    <h3 class="daohang">五彩导航：</h3>
+    <div class="dh">
+        <a href="#" class="bg1">五彩导航</a>
+        <a href="#" class="bg2">五彩导航</a>
+        <a href="#" class="bg3">五彩导航</a>
+        <a href="#" class="bg4">五彩导航</a>
+        <a href="#" class="bg5">五彩导航</a>
+    </div>
+    <h3 class="daohang">CSS代码如下：</h3>
+    <img src="../编程截图/CSS背景综合案例代码.png" width="500px" height="400px">
+</body>
+</html>
