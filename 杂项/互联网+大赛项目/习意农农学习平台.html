@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>习意农农学习平台</title>
+  <meta name="keywords" content="习意农农学习平台">
+  <meta name="description" content="习意农农学习平台">
+  <meta name="applicable-device" content="pc,mobile">
+  <link href="../学习平台/css/bootstrap.css" rel="stylesheet">
+  <link href="../学习平台/css/bxslider.css" rel="stylesheet">
+  <link href="../学习平台/css/style.css" rel="stylesheet">
+  <script src="../学习平台/js/jquery.min.js"></script>
+  <script src="../学习平台/js/bxslider.min.js"></script>
+  <script src="../学习平台/js/common.js"></script>
+  <script src="../学习平台/js/bootstrap.js"></script>
+</head>
+
+<body style="overflow-x: hidden;">
+  <header>
+    <div class="top_bg">
+      <div class="container">
+        <div class="col-xs-12 col-sm-9 col-md-9"> <span class="top_welcome">欢迎您来到 习意农农学习平台！</span> </div>
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <form id="searchform" method="get" action="https://show.17sucai.com/k155/?search/">
+            <div class="input-group search_group">
+              <input type="text" name="keyword" class="form-control input-sm" placeholder="热点搜索">
+              <span class="input-group-btn"> <span id="search_submit" onclick="searchform.submit();" title="热点搜索"
+                  class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span> </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-9"> <a href=""><img src="../学习平台/static/image/logo.jpg" class="logo" alt="logo"></a> </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 tel_box">
+          <!-- <div class="top_tel"> <img src="../学习平台/static/image/tel.png" alt="服务热线"> <span>全国服务热线：</span>
+            <p>400-888-xxx</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed navbar -->
+    <nav id="top_nav" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar"> <span class="sr-only">导航菜单</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <span id="search_btn" class="glyphicon glyphicon-search" aria-hidden="true"></span> <a class="navbar-brand"
+            href=""></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="">首 页</a></li>
+
+            <li class="dropdown"> <a href="">关于我们</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> <span
+                  class="glyphicon glyphicon-menu-down btn-xs"></span> </a>
+
+              <ul class="dropdown-menu nav_small" role="menu">
+
+                <li><a href="">企业简介</a></li>
+
+                <li><a href="">企业文化</a></li>
+
+                <li><a href="">荣誉资质</a></li>
+
+                <li><a href="">合作客户</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown"> <a href="">新闻资讯</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> <span
+                  class="glyphicon glyphicon-menu-down btn-xs"></span> </a>
+
+              <ul class="dropdown-menu nav_small" role="menu" style="display: none;">
+
+                <li><a href="">公司新闻</a></li>
+
+                <li><a href="">行业新闻</a></li>
+
+                <li><a href="">常见问题</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown"> <a href="">产品展示</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> <span
+                  class="glyphicon glyphicon-menu-down btn-xs"></span> </a>
+
+              <ul class="dropdown-menu nav_small" role="menu" style="display: none;">
+
+                <li><a href="">产品分类一</a></li>
+
+                <li><a href="">产品分类二</a></li>
+
+                <li><a href="">产品分类三</a></li>
+
+                <li><a href="">产品分类四</a></li>
+
+                <li><a href="">产品分类五</a></li>
+
+                <li><a href="">产品分类六</a></li>
+
+              </ul>
+            </li>
+
+            <li class="dropdown"> <a href="">服务案例</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> </a>
+            </li>
+
+            <li class="dropdown"> <a href="">销售网络</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> </a>
+            </li>
+
+            <li class="dropdown"> <a href="">联系我们</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> </a>
+            </li>
+
+            <li class="dropdown"> <a href="">在线留言</a> <a href="" id="app_menudown" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-expanded="false"> </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- bxslider -->
+  <div class="flash">
+    <div class="bx-wrapper" style="max-width: 100%;">
+      <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 395px;">
+        <ul class="bxslider"
+          style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-1303px, 0px, 0px);">
+
+          <li style="float: left; list-style: none; position: relative; width: 1263px;"><a href="" target="_blank"><img
+                src="../学习平台/static/image/1643275747252505.jpg"></a></li>
+
+          <li style="float: left; list-style: none; position: relative; width: 1263px;"><a href="" target="_blank"><img
+                src="../学习平台/static/image/1643275770501402.jpg"></a></li>
+
+        </ul>
+      </div>
+      <div class="bx-controls bx-has-pager bx-has-controls-direction">
+        <div class="bx-pager bx-default-pager">
+          <div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div>
+          <div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a></div>
+        </div>
+        <div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next disabled"
+            href="">Next</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.bxslider').bxSlider({
+      adaptiveHeight: true,
+      infiniteLoop: false,
+      hideControlOnEnd: true,
+      auto: true
+    });
+  </script>
+  <div class="advantage" style="background-image: url();">
+    <div class="container advantage_list">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+          <a href="" target="_self">
+            <div class="col-sm-3 col-md-3"> <img src="../学习平台/static/image/product.png" alt="新闻资讯"> </div>
+            <div class="col-sm-9 col-md-9">
+              <h4>新闻资讯</h4>
+              <p>NEWS</p>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+          <a href="" target="_self">
+            <div class="col-sm-3 col-md-3"> <img src="../学习平台/static/image/honor.png" alt="产品展示"> </div>
+            <div class="col-sm-9 col-md-9">
+              <h4>产品展示</h4>
+              <p>PRODUCT</p>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+          <a href="" target="_self">
+            <div class="col-sm-3 col-md-3"> <img src="../学习平台/static/image/case.png" alt="服务案例"> </div>
+            <div class="col-sm-9 col-md-9">
+              <h4>服务案例</h4>
+              <p>DISPLAY CASE</p>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+          <a href="" target="_self">
+            <div class="col-sm-3 col-md-3"> <img src="../学习平台/static/image/contact.png" alt="联系我们"> </div>
+            <div class="col-sm-9 col-md-9">
+              <h4>联系我们</h4>
+              <p>CONTACT US</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="perspective: 1000px;">
+      <div class="product_head" data-move-y="-40px"
+        style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+        <h2>习意农农 · 学习平台</h2>
+        <span></span>
+        <p>青年红色筑梦之旅赛道——公益组</p>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3" style="perspective: 1000px;">
+        <div class="left_nav" data-move-y="-30px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-30px);">
+          <p>PRODUCT</p>
+          <h3>产品展示</h3>
+          <div class="left_nav_bg">
+            <ul class="left_nav_ul" id="firstpane">
+
+              <li><a class="biglink" href="">产品分类一</a> </li>
+              <li><a class="biglink" href="">产品分类二</a> </li>
+              <li><a class="biglink" href="">产品分类三</a> </li>
+              <li><a class="biglink" href="">产品分类四</a> </li>
+              <li><a class="biglink" href="">产品分类五</a> </li>
+              <li><a class="biglink" href="">产品分类六</a> </li>
+            </ul>
+            <div class="left_nav_tel">400-888-xxxx</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+        <div class="product_list" style="perspective: 1000px;">
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示九"> </a>
+            <p class="product_title"><a href="" title="产品展示九">惠农</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051620033.jpg"
+                class="opacity_img" alt="产品展示八"> </a>
+            <p class="product_title"><a href="" title="产品展示八">普法</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示七"> </a>
+            <p class="product_title"><a href="" title="产品展示七">喜闻乐见</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051620033.jpg"
+                class="opacity_img" alt="产品展示六"> </a>
+            <p class="product_title"><a href="" title="产品展示六">农技讲堂</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示五"> </a>
+            <p class="product_title"><a href="" title="产品展示五">亲子园</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示四"> </a>
+            <p class="product_title"><a href="" title="产品展示四">帮你忙</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示三"> </a>
+            <p class="product_title"><a href="" title="产品展示三">好山、好水、好人</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051100519.jpg"
+                class="opacity_img" alt="产品展示二"> </a>
+            <p class="product_title"><a href="" title="产品展示二">文化广场</a></p>
+          </div>
+
+          <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+              href=""> <img src="../学习平台/static/image/1643270051620033.jpg"
+                class="opacity_img" alt="产品展示一"> </a>
+            <p class="product_title"><a href="" title="产品展示一">农业商城</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="case_bg"
+    style="background-image: url(static/image/casebg.jpg); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12" style="perspective: 1000px;">
+          <div class="case_head" data-move-y="-40px"
+            style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+            <h2>服务案例</h2>
+            <span></span>
+            <p>DISPLAY CASE</p>
+          </div>
+          <div class="case_list" style="perspective: 1000px;">
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051620033.jpg"
+                  class="product_img" alt="案例展示六"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示六</a></p>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051100519.jpg"
+                  class="product_img" alt="案例展示五"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示五</a></p>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051100519.jpg"
+                  class="product_img" alt="案例展示四"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示四</a></p>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051100519.jpg"
+                  class="product_img" alt="案例展示三"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示三</a></p>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051100519.jpg"
+                  class="product_img" alt="案例展示二"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示二</a></p>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px"
+              style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a
+                href=""><img src="../学习平台/static/image/1643270051620033.jpg"
+                  class="product_img" alt="案例展示一"
+                  style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;"></a>
+              <p class="case_title"><a href="">案例展示一</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12" style="perspective: 1000px;">
+        <div class="about_head" data-move-y="-40px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+          <h2>关于我们</h2>
+          <span></span>
+          <p>ABOUT US</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 js_about_left" data-move-y="-40px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+          <div class="about_content">
+            基于新型职业农民身份的特殊性，为提高学习平台对农民的吸引力，学习平台的功能应该是多元的，而且随着时代的变化，需求的功能也应该不断地扩展延伸。我认为习意农农学习平台广义上是一个综合性的学习、咨询、服务平台。其首要的功能是供农民随时随地学习实用生产技术、生态农业、休闲娱乐平台等，其次还能收集、发布各类农业信息，为农民学员提供后续的跟踪服务。除此以外，还应根据不同农民需求开发更多的实用性功能。当前，手机、电脑等智能设备和移动互联网在农村广泛应用，构建一个新型职业农民学习平台是农业信息化发展的必然结果我国对新型职业农民学习平台的建设也进行了系列探索，国家农业部科教司正基于云计算和大数据进行系统设计和架构，打造国家农业科技服务云平台。隆平现代农业科技服务有限公司初步打造了“云上智农”新型职业农民培育综合服务社区手机客户端应用，一批“远程课堂”“在线课堂”“空中课堂”正在形成。
+          </div>
+          <a href="" class="about_btn">了解更多</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 js_about_right" data-move-y="40px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(40px);">
+          <div class="about_video"> <img src="../学习平台/static/image/1643276708899527.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="news_bg">
+    <div class="container">
+      <div class="row" style="perspective: 1000px;">
+        <div class="news_head" data-move-y="-40px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+          <h2>新闻资讯</h2>
+          <span></span>
+          <p>NEWS</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="col-sm-12 col-md-5 news_img" data-move-x="-100px"
+            style="background-image: url(static/image/news.jpg);"> </div>
+          <div class="col-xs-12 col-sm-12 col-md-7  news_text" data-move-y="150px">
+            <ul class="news_index">
+
+              <li> <span> <strong>23</strong> <i>2022-06</i> </span> <a href=""
+                  title="最新海外疫情：新冠感染超5.36亿 累计接种新冠疫苗超119.94亿次">最新海外疫情：新冠感染超5.36亿 累计接种新冠疫苗超119.94亿次</a>
+                <em>6月22日，中国之外221个国家和地区有感染病例，累计感染者过千例的已达到181个；美国累计感染约8660万例全球居首，印度超4334万例、巴西超3189万例分列二三位...</em>
+              </li>
+
+              <li> <span> <strong>17</strong> <i>2022-03</i> </span> <a href=""
+                  title="供应偏紧的猪价还能涨多久/快递业的下个增长点在哪里｜数据精华">供应偏紧的猪价还能涨多久/快递业的下个增长点在哪里｜数据精华</a>
+                <em>猪价能涨多久 最新一期猪市分析提到，近期猪价上涨，除了供应偏紧持续对价格形成有利支撑外，冻猪肉进口量今年以来持续下降、政府冻猪肉收储的频繁开展都有“贡献”。</em>
+              </li>
+
+              <li> <span> <strong>21</strong> <i>2022-06</i> </span> <a href=""
+                  title="农业社会化服务再加把劲">农业社会化服务再加把劲</a>
+                <em>今年山东小麦实现高产稳产，农业社会化服务功不可没。今年的中央一号文件指出“聚焦关键薄弱环节和小农户，加快发展农业社会化服务”，农业社会化服务对粮食生产的重要性可见一斑。</em>
+              </li>
+
+              <li> <span> <strong>22</strong> <i>2022-06</i> </span> <a href=""
+                  title="李克强主持召开国务院常务会议部署继续做好防汛救灾工作切实保障人民群众生命财产安全">李克强主持召开国务院常务会议部署继续做好防汛救灾工作切实保障人民群众生命财产安全</a>
+                <em>新华社北京6月22日电 国务院总理李克强6月22日主持召开国务院常务会议，部署继续做好防汛救灾工作，切实保障人民群众生命财产安全；听取稳定粮食生产工作汇报。</em>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12" style="perspective: 1000px;">
+        <div class="cooperation_head" data-move-y="-40px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(-40px);">
+          <h2>合作客户</h2>
+          <span></span>
+          <p>Testimonials</p>
+        </div>
+
+        <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a href=""
+            target="_blank"> <img src="../学习平台/static/image/1643268135669680.jpg"
+              class="img-thumbnail" alt="合作客户"> </a> </div>
+
+        <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a href=""
+            target="_blank"> <img src="../学习平台/static/image/1643268135669680.jpg"
+              class="img-thumbnail" alt="合作客户"> </a> </div>
+
+        <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a href=""
+            target="_blank"> <img src="../学习平台/static/image/1643268135669680.jpg"
+              class="img-thumbnail" alt="合作客户"> </a> </div>
+
+        <div class="col-xs-4 col-md-3 col-mm-6 cooperation_img" data-move-y="50px"
+          style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0; transform: translateY(50px);"> <a href=""
+            target="_blank"> <img src="../学习平台/static/image/1643268135669680.jpg"
+              class="img-thumbnail" alt="合作客户"> </a> </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../学习平台/js/jquery.smoove.min.js"></script>
+  <script>$('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.news_head,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({ offset: '10%' });</script>
+  <script src="../学习平台/js/jquery.smoove.min.js"></script>
+  <script>$('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.news_head,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({ offset: '10%' });</script>
+
+  <nav class="navbar navbar-default navbar-fixed-bottom mfoot_box">
+    <div class="mfoot_nav"><a href=""><span class="glyphicon glyphicon-home btn-lg" aria-hidden="true"></span>首页</a>
+    </div>
+    <div class="mfoot_nav"> <a href="tel:13588888888"> <span class="glyphicon glyphicon-phone btn-lg"
+          aria-hidden="true"></span>手机 </a> </div>
+    <div class="mfoot_nav" aria-hidden="true" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+      aria-controls="navbar"> <span class="glyphicon glyphicon-th-list btn-lg"></span>分类 </div>
+    <div class="mfoot_nav"> <a id="gototop" href=""> <span class="glyphicon glyphicon-circle-arrow-up btn-lg"
+          aria-hidden="true"></span>顶部 </a> </div>
+  </nav>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"> <img class="footer_logo"
+            src="../学习平台/static/image/1643274727252674.png" alt="底部LOGO">
+          <p class="footer_logo_text">
+          </p>
+          <p class="baise"> Copyright © 2022 习意农农学习平台 版权所有 <a href="javascript:;" target="_blank">ICP备xxxx号</a> <a
+              href="javascript:;" target="_blank">XML地图</a> <a href="javascript:;" target="_blank">习意农农学习平台</a> </p>
+
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 footer_contact">
+          <p>联系人：习意农农学习平台</p>
+          <p>手机：135xxxxx</p>
+          <p>电话：400-888-xxxx</p>
+          <p>邮箱：习意农农学习平台</p>
+          <p>地址：湖北省xxxx</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="col-xs-4 col-md-4 footer_menu">
+            <p class="footer_menu_first"><a target="_blank" href="">关于我们</a></p>
+
+            <p><a href="" target="_self">企业简介</a></p>
+
+            <p><a href="" target="_self">企业文化</a></p>
+
+            <p><a href="" target="_self">荣誉资质</a></p>
+
+            <p><a href="" target="_self">合作客户</a></p>
+          </div>
+
+          <div class="col-xs-4 col-md-4 footer_menu">
+            <p class="footer_menu_first"><a target="_blank" href="">新闻资讯</a></p>
+
+            <p><a href="" target="_self">公司新闻</a></p>
+
+            <p><a href="" target="_self">行业新闻</a></p>
+
+            <p><a href="" target="_self">常见问题</a></p>
+          </div>
+
+          <div class="col-xs-4 col-md-4 footer_menu">
+            <p class="footer_menu_first"><a target="_blank" href="">产品展示</a></p>
+
+            <p><a href="" target="_self">产品分类一</a></p>
+
+            <p><a href="" target="_self">产品分类二</a></p>
+
+            <p><a href="" target="_self">产品分类三</a></p>
+
+            <p><a href="" target="_self">产品分类四</a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2"> <img class="footer_qrcode"
+            src="../学习平台/static/image/code.png" alt="关于我们">
+          <p class="footer_qrcode_text">关于我们</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--客服面板-->
+  <link rel="stylesheet" type="text/css" href="../学习平台/css/online.css">
+  <div id="cmsFloatPanel">
+    <div class="ctrolPanel"> <a class="service" href=""></a> <a class="qrcode" href=""></a> <a class="arrow"
+        title="返回顶部" href=""></a> </div>
+    <div class="servicePanel" style="width: 126.866px; display: none;">
+      <div class="servicePanel-inner">
+        <div class="serviceMsgPanel">
+          <div class="serviceMsgPanel-hd"><a href=""><span>关闭</span></a></div>
+          <div class="serviceMsgPanel-bd">
+            <!--在线QQ-->
+            <!--在线QQ-->
+            <!--在线MSN-->
+            <div class="msggroup"> <a href="javascript:;" target="blank"><img class="qqimg"
+                  src="../学习平台/static/image/qq.jpg" alt="qq">QQ客服1</a> </div>
+            <div class="msggroup"> <a href="javascript:;" target="blank"><img class="qqimg"
+                  src="../学习平台/static/image/qq.jpg" alt="qq">QQ客服2</a> </div>
+          </div>
+          <div class="serviceMsgPanel-ft"></div>
+        </div>
+        <div class="arrowPanel">
+          <div class="arrow02"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qrcodePanel" style="width: 0px; display: none;">
+      <div class="qrcodePanel-inner">
+        <div class="codePanel">
+          <div class="codePanel-hd"><span style="float:left">用手机扫描二维码</span><a href=""><span>关闭</span></a></div>
+          <div class="codePanel-bd"> <img src="../学习平台/static/image/1643274096644637.png"
+              alt="二维码"> </div>
+        </div>
+        <div class="arrowPanel">
+          <div class="arrow01"></div>
+          <div class="arrow02"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../学习平台/js/online.js"></script>
+  <!-- <div class="link_box">
+    <div class="container"> <span class="link_title">友情链接</span>
+      <button id="link_btn" class="glyphicon glyphicon-plus" aria-hidden="true"></button>
+      <span class="link_list"> <a href="javascript:;" target="_blank">百度</a> <a href="javascript:;"
+          target="_blank">百度</a> <a href="javascript:;" target="_blank">百度</a> </span>
+    </div>
+  </div> -->
+</body>
+</html>
