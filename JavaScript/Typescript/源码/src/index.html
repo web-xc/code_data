@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇项目</title>
+</head>
+<body>
+    <h5>每2分升一级 上限等级为10 随着等级越高速度越快</或>
+    <h5>PC端按右键即可开始游戏/移动端右按钮开始游戏</或>
+    <!-- 创建游戏主容器 -->
+    <div id="main">
+        <!-- 设置游戏舞台 -->
+        <div class="stage">
+            <!-- 设置蛇 -->
+            <div class="snake">
+                <!-- snake内部div表示蛇的部分 -->
+                <div></div>
+            </div>
+            <!-- 设置食物 -->
+            <div class="food">
+                <!-- 添加四个div, 设置食物样式 -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- 设置游戏积分牌 -->
+        <div class="box"></div>
+        <div class="score-panel">
+            <div>
+                分数: <span class="score">0</span>
+            </div>
+            <div>
+                等级: <span class="level">1</span>
+            </div>
+        </div>
+    </div>
+    <button class="up">上</button>
+    <button class="down">下</button>
+    <button class="left">左</button>
+    <button class="right">右(开始游戏)</button>
+    <button class="btn">重新开始</button>
+    <script>
+        let btn = document.querySelector('.btn')
+        btn.addEventListener('click', function () {
+            location.reload()
+        })
+    </script>
+</body>
+</html>

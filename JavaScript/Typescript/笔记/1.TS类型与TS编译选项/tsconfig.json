@@ -1,0 +1,42 @@
+// 1. tsconfig.json是ts编译器的配置文件, 可以根据它的配置对代码进行编译
+// 2. include: 用来指定哪些ts文件需要被编译: **表示任意目录, *表示任意文件
+// 3. exclude: 表示不需要被编译的文件目录, 默认值: ["node_modules", "bower_components", "jspm_packages"]
+// 4. extends: 定义被继承的配置文件
+// 5. files: 指定被编译文件, 只有需要编译文件少时才会用到
+// 6. compilerOptions: 编译器的选项
+// 7. target: 用来指定ts被编译的ES版本
+// 8. module: 指定要使用的模块化规范
+// 9. lib: 指定项目中使用的库(不用设置)
+// 10. outDir: 指定编译后的文件所在的目录
+// 11. outFile: 设置所有全局作用域代码合并到一个文件中
+// 12. allowJs: 是否对js文件进行编译, 默认false
+// 13. checkJs: 是否检查js代码语法规范, 默认false
+// 14. removeComments: 是否移除注释
+// 15. noEmit: 不生成编译后的文件
+// 16. noEmitOnError: 当有错误不编译js文件
+// 17. alwaysStrict: 设置编译后的文件是否使用严格模式, 默认false
+// 18. noImplicitOverride: 不允许隐式的any类型
+// 19. noImplicitThis: 不允许不明确类型的this
+// 20. strictNullChecks: 严格检查空值
+// 21. strict: 所有严格检查的总开关
+{
+    // "include": ["./src/**/*"],
+    // "exclude": ["./src/hello/**/*"]
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "System", // system要配合outFile使用, 默认ES2015
+        // "lib": ["DOM"]
+        "outDir": "./dist",
+        "outFile": "./dist/js.js",
+        "allowJs": true,
+        "checkJs": false,
+        "removeComments": false,
+        "noEmit": false,
+        "noEmitOnError": false,
+        "alwaysStrict": false,
+        "noImplicitOverride": false,
+        "noImplicitThis": false,
+        "strictNullChecks": false,
+        "strict": false
+    }
+}

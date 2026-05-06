@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "ES2015",
+        "target": "ES2015",
+        "strict": true,
+        "outDir": "../2.类的使用/dist"
+    },
+    "include": ["src/**/*", "dist"]
+}
